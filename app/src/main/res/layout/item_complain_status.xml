@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:background="@color/bgcolor">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/image_complain_picture"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        fresco:failureImage="@mipmap/ic_stub"
+        fresco:failureImageScaleType="center"
+        fresco:placeholderImage="@mipmap/ic_stub"
+        fresco:placeholderImageScaleType="center"
+        fresco:retryImage="@mipmap/ic_stub"
+        fresco:retryImageScaleType="center" />
+
+    <TextView
+        android:id="@+id/tv_complain_store"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/image_complain_picture"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_toRightOf="@id/image_complain_picture"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="name"
+        android:textColor="@color/zero_use_txt_gray"
+        android:textSize="@dimen/text_fifteen" />
+
+    <TextView
+        android:id="@+id/tv_complain_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/image_complain_picture"
+        android:layout_alignLeft="@id/tv_complain_store"
+        android:text="price"
+        android:textColor="@color/complain_status_text_color"
+        android:textSize="@dimen/text_thirteen" />
+
+    <TextView
+        android:id="@+id/tv_complain_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:text="price"
+        android:textColor="@color/complain_time_text_color"
+        android:textSize="@dimen/text_thirteen" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/gray"
+        android:visibility="gone" />
+
+</RelativeLayout>

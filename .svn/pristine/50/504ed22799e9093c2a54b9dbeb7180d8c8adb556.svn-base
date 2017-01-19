@@ -1,0 +1,51 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">4dp</dimen>
+
+
+    <dimen name="button_height">40.0dp</dimen>
+    <dimen name="bottom_tab_font_size">15sp</dimen>
+    <dimen name="bottom_tab_padding_up">1.5dp</dimen>
+    <dimen name="bottom_tab_padding_drawable">1.0dp</dimen>
+    <dimen name="list_keep_width">100.0dp</dimen>
+    <dimen name="leftlist_img_width">85dp</dimen>
+
+    <dimen name="textmax_balance">22sp</dimen>
+    <dimen name="textmax">20sp</dimen>
+    <dimen name="textlarge">18sp</dimen>
+    <dimen name="textlmiddle">17sp</dimen>
+    <dimen name="textsmall">16sp</dimen>
+    <dimen name="textmin">14sp</dimen>
+
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="button_height_chang">48dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="ui_10_dip">10dip</dimen>
+    <dimen name="divider">0.3dp</dimen>
+    <dimen name="leftmargin">16dp</dimen>
+    <dimen name="rightmargin">16dp</dimen>
+    <dimen name="zero">0dp</dimen>
+    <dimen name="text_twenty_two">22sp</dimen>
+    <!-- 设计图效果 -->
+    <dimen name="text_nineteen">19sp</dimen>
+    <dimen name="text_fifteen">15sp</dimen>
+    <dimen name="text_thirteen">13sp</dimen>
+    <dimen name="text_seventeen">17sp</dimen>
+    <dimen name="text_twenty_seventh">27sp</dimen>
+    <dimen name="text_eleven">11sp</dimen>
+    <dimen name="text_twelve">12sp</dimen>
+    <dimen name="text_nine">9sp</dimen>
+    <dimen name="text_forty">40sp</dimen>
+</resources>

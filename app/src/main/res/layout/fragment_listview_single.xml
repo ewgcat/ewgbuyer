@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+
+    <com.ewgvip.buyer.android.pulltorefresh.PullToRefreshListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/white"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:scrollbars="vertical|none"
+        android:divider="@color/divgray"
+        android:dividerHeight="0.3dp"
+        android:smoothScrollbar="true">
+
+    </com.ewgvip.buyer.android.pulltorefresh.PullToRefreshListView>
+
+    <include
+        android:id="@+id/nodata"
+        layout="@layout/layout_nodata"></include>
+
+</LinearLayout>

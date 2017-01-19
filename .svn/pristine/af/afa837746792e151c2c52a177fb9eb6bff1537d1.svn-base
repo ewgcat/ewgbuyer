@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray">
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/layout_cart1_toolbar"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/car_bottom"
+        android:layout_below="@+id/top"
+        android:orientation="vertical">
+
+        <com.ewgvip.buyer.android.pulltorefresh.PullToRefreshListView
+            android:id="@+id/pullToRefreshListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/light_gray"
+            android:cacheColorHint="#00000000"
+            android:descendantFocusability="beforeDescendants"
+            android:divider="@color/light_gray"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="true"
+            android:headerDividersEnabled="false"
+            android:scrollbars="vertical"
+            android:smoothScrollbar="true" />
+
+        <include
+            android:id="@+id/nodata"
+            layout="@layout/layout_nodata"></include>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/car_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_cloud_purchase_item">
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            >
+
+            <TextView
+                android:id="@+id/tv_cloud_purchase_cart_check"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:background="@mipmap/unchecked_round" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@id/tv_cloud_purchase_cart_check"
+                android:text="@string/select_all" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_cloud_purchase_cart"
+            style="@style/button_red"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:text="结算"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/relativeLayout_submit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/btn_cloud_purchase_cart"
+            android:layout_toRightOf="@+id/relativeLayout_edit"
+            android:background="@color/white"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:paddingLeft="16dp">
+
+            <TextView
+                android:id="@+id/tv_cloud_purchase_cart_price"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="总计：10000" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

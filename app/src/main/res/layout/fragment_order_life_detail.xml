@@ -1,0 +1,228 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <include
+        android:id="@+id/orderDetail_top"
+        layout="@layout/layout_toolbar"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/orderDetail_top"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="8dp">
+
+                <TextView
+                    android:id="@+id/orderStatus_tag"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="right"
+                    android:text="@string/orderStatus"
+                    android:textColor="@color/textlight_group_left" />
+
+                <TextView
+                    android:id="@+id/orderStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/orderStatus_tag"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/orderStatus_tag"
+                    android:textColor="@color/red_text" />
+
+                <TextView
+                    android:id="@+id/orderNumber_tag"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/orderStatus_tag"
+                    android:layout_below="@id/orderStatus_tag"
+                    android:layout_marginTop="4dp"
+                    android:gravity="right"
+                    android:text="订  单  号:"
+                    android:textColor="@color/textlight_group_left" />
+
+                <TextView
+                    android:id="@+id/orderNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/orderNumber_tag"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/orderNumber_tag"
+                    android:textColor="@color/textlight_group_right" />
+
+                <TextView
+                    android:id="@+id/addtime_tag"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/orderStatus_tag"
+                    android:layout_below="@id/orderNumber_tag"
+                    android:layout_marginTop="4dp"
+                    android:gravity="right"
+                    android:text="@string/orderTime"
+                    android:textColor="@color/textlight_group_left" />
+
+                <TextView
+                    android:id="@+id/addtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/addtime_tag"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/addtime_tag"
+                    android:textColor="@color/textlight_group_right" />
+
+                <TextView
+                    android:id="@+id/paytype_tag"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/orderStatus_tag"
+                    android:layout_below="@id/addtime_tag"
+                    android:layout_marginTop="4dp"
+                    android:gravity="right"
+                    android:text="@string/paymentMethods"
+                    android:textColor="@color/textlight_group_left" />
+
+                <TextView
+                    android:id="@+id/paytype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/paytype_tag"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/addtime_tag"
+                    android:textColor="@color/red_text" />
+
+                <View
+                    android:id="@+id/divide_lines"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:layout_below="@+id/paytype_tag"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/divgray" />
+
+                <Button
+                    android:id="@+id/button"
+                    style="@style/button_white_redframe"
+                    android:layout_width="80dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/paytype_tag"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="去支付"
+                    android:textColor="@color/red"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/order_cancle"
+                    style="@style/button_white_redframe"
+                    android:layout_width="80dp"
+                    android:layout_height="32dp"
+                    android:layout_below="@+id/paytype_tag"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_toLeftOf="@+id/button"
+                    android:text="取消订单"
+                    android:textColor="@color/red"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/divgray" />
+
+
+            <RelativeLayout
+                android:id="@+id/order_search_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp">
+
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/img"
+                    android:layout_width="84dp"
+                    android:layout_height="84dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    fresco:failureImage="@mipmap/ic_stub"
+                    fresco:failureImageScaleType="center"
+                    fresco:placeholderImage="@mipmap/ic_stub"
+                    fresco:placeholderImageScaleType="center"
+                    fresco:retryImage="@mipmap/ic_stub"
+                    fresco:retryImageScaleType="center" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@id/img"
+                    android:lines="2"
+                    android:textColor="@color/textdark" />
+
+
+
+                <TextView
+                    android:id="@+id/count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/name"
+                    android:layout_below="@id/name"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/textdark" />
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/count"
+                    android:layout_toRightOf="@id/img"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/red" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/divgray" />
+
+            <LinearLayout
+                android:id="@+id/sn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

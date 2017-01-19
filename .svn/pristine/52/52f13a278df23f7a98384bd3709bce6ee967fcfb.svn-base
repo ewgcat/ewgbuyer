@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="8dp" >
+
+    <ImageView
+        android:id="@+id/free_img"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="8dp"
+        android:background="@color/gray"
+        android:padding="0.3dp" />
+
+    <TextView
+        android:id="@+id/free_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/free_img"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/textdark" />
+
+    <TextView
+        android:id="@+id/free_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/free_name"
+        android:layout_below="@id/free_name"
+        android:layout_marginTop="4dp"
+        android:background="@color/red"
+        android:paddingBottom="1dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:paddingTop="1dp"
+        android:text="@string/free_apply"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/apply_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/free_name"
+        android:layout_below="@id/free_buy"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/red" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/apply_num"
+        android:layout_toRightOf="@id/apply_num"
+        android:text="@string/apply_num"
+        android:textColor="@color/textdark" />
+
+</RelativeLayout>

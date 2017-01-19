@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_item_address_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="10dp"
+    android:paddingTop="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp">
+
+        <!--layout_item_address_select -->
+        <RelativeLayout
+            android:id="@+id/layout_item_address_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/layout_item_address_edit">
+
+            <RelativeLayout
+                android:id="@+id/layout_item_address_info"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical">
+
+                <!-- 名字 -->
+                <TextView
+                    android:id="@+id/tv_item_address_list_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/address_name"
+                    android:drawablePadding="5dp"
+                    android:textColor="@color/address_name"
+                    android:textSize="14sp" />
+
+                <!-- 手机号 -->
+                <TextView
+                    android:id="@+id/tv_item_address_list_tel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="36dp"
+                    android:drawableLeft="@mipmap/address_phone"
+                    android:drawablePadding="5dp"
+                    android:textColor="@color/address_name"
+                    android:textSize="14sp"
+                    android:layout_alignTop="@+id/tv_item_address_list_name"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_item_address_list_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_item_address_info"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/address_address"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/tv_item_address_list_address_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_item_address_list_address"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/address_address"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_item_address_edit"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0.5dp"
+                android:layout_height="40dp"
+                android:background="@color/divider_line" />
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/address_edit_select" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_item_address_default"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:id="@+id/layout_item_address_list"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/rbtn_item_address_list"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/checkbox_round"
+                android:button="@null"
+                android:clickable="false"
+                android:focusable="false"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/rbtn_item_address_list"
+                android:gravity="center_vertical"
+                android:textSize="12sp"
+                android:text="@string/address_default" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_item_address_list_delete"
+            style="@style/button_white_frame"
+            android:layout_width="70dp"
+            android:layout_height="28dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/address_delete"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_item_address_list_edit"
+            style="@style/button_white_frame"
+            android:layout_width="70dp"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btn_item_address_list_delete"
+            android:text="@string/address_edit"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+</LinearLayout>
+

@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_index"
+        android:orderInCategory="100"
+        android:icon="@mipmap/index_icon1"
+        android:title="@string/index"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_map"
+        android:icon="@mipmap/locationchange"
+        android:orderInCategory="100"
+        android:title="@string/group_shopping"
+        app:showAsAction="ifRoom" />
+</menu>

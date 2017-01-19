@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/layout_integral_index_toolbar"></include>
+
+
+    <LinearLayout
+        android:id="@+id/ll_integral_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/gray"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_integral_count"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_integral_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:singleLine="true"
+                android:drawableLeft="@mipmap/integral_count"
+                android:drawablePadding="4dp"
+                android:maxEms="6"
+                android:focusable="true"
+                android:text="@string/integral_count" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="11dip"
+            android:layout_marginTop="11dip"
+            android:background="@color/get_coupon_success_view" />
+
+        <RelativeLayout
+            android:id="@+id/rl_integral_exchange"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_integral_exchange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:drawableLeft="@mipmap/integral_exchange"
+                android:drawablePadding="4dp"
+                android:focusable="true"
+                android:text="@string/integral_exchange" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="11dip"
+            android:layout_marginTop="11dip"
+            android:background="@color/get_coupon_success_view" />
+
+        <RelativeLayout
+            android:id="@+id/rl_integral_screen"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_integral_screen"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@mipmap/integral_screen"
+                android:drawablePadding="4dp"
+                android:singleLine="true"
+                android:text="@string/integral_screen" />
+
+            <ImageView
+                android:id="@+id/iv_pull_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@id/tv_integral_screen"
+                android:src="@mipmap/pull_down" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/fragment_listview_single"></include>
+
+</LinearLayout>

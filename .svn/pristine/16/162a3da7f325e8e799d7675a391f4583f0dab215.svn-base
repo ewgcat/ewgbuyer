@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_line"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/layout_item_cloud_purchase_cart_check"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_item_cloud_purchase_cart_check"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@mipmap/unchecked_round" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/iv_item_cloud_purchase_cart"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:background="@color/white"
+                fresco:failureImage="@mipmap/ic_stub"
+                fresco:failureImageScaleType="fitXY"
+                fresco:placeholderImage="@mipmap/ic_stub"
+                fresco:placeholderImageScaleType="fitCenter"
+                fresco:retryImage="@mipmap/ic_stub"
+                fresco:retryImageScaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/iv_item_cloud_purchase_type"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/cloud_purchase_coupons" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/iv_item_cloud_purchase_cart"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_item_cloud_purchase_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="afhadklgvjhaiehgaieghakldhnfvjkahf" />
+
+                <TextView
+                    android:id="@+id/tv_item_cloud_purchase_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="总需7280人次，剩余7110人次"
+                    android:textSize="12sp" />
+
+
+                <RelativeLayout
+                    android:id="@+id/layout_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tv_cloud_purchase_times"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="参与人次"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_toRightOf="@+id/tv_cloud_purchase_times"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/ibtn_item_cloud_purchase_minus"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/frame_grey"
+                            android:contentDescription="@string/img"
+                            android:scaleType="centerInside"
+                            android:src="@mipmap/minus" />
+
+                        <EditText
+                            android:id="@+id/et_item_cloud_purchase_count"
+                            android:layout_width="60dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="4dp"
+                            android:background="@drawable/frame_grey"
+                            android:gravity="center"
+                            android:focusable="true"
+                            android:imeOptions="actionDone"
+                            android:focusableInTouchMode="true"
+                            android:inputType="number"
+                            android:maxLength="5"
+                            android:minWidth="50dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <ImageButton
+                            android:id="@+id/ibtn_item_cloud_purchase_plus"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="4dp"
+                            android:background="@drawable/frame_grey"
+                            android:contentDescription="@string/img"
+                            android:scaleType="centerInside"
+                            android:src="@mipmap/plus" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_item_cloud_purchase"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="参与人次需是10的倍数"
+                    android:textColor="@color/red"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

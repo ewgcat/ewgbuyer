@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:id="@+id/tv_freeze_e_gold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"
+            android:text="冻结E币："
+            android:textColor="@color/textdark"
+            android:textSize="18sp" />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/tv_freeze_egold_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"
+            android:text="0000年00月00日"
+            android:textColor="@color/textdark"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_tixian_e_gold_num"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginLeft="24dp"
+        android:text="+5"
+        android:textColor="@color/textdark"
+        android:textSize="18sp" />
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray">
+
+    <include
+        android:id="@+id/toolbar_layout"
+        layout="@layout/layout_toolbar_cloud_home"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_layout"
+        android:orientation="vertical">
+
+        <com.ewgvip.buyer.android.pulltorefresh.PullToRefreshListView
+            android:id="@+id/pullToRefreshListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/light_gray"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/light_gray"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="true"
+            android:headerDividersEnabled="false"
+            android:scrollbars="vertical"
+            android:smoothScrollbar="true" />
+
+        <include
+            android:id="@+id/nodata"
+            layout="@layout/layout_nodata"></include>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/ygbg"
+        android:orientation="horizontal">
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_cloud_purchase_center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:id="@+id/iv_cloud_purchase_center"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/cloud_purchase_center" />
+
+            <TextView
+                android:textColor="@color/white"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="center_horizontal"
+                android:text="云购中心" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_cart_icon"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/cart_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@mipmap/cart_icon" />
+
+
+            <TextView
+                android:textColor="@color/white"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="center_horizontal"
+                android:text="购物车" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

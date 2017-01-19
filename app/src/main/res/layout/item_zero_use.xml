@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:orientation="vertical">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_item_zero_use"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        fresco:actualImageScaleType="fitXY"
+        fresco:failureImage="@mipmap/ic_stub"
+        fresco:failureImageScaleType="center"
+        fresco:placeholderImage="@mipmap/ic_stub"
+        fresco:placeholderImageScaleType="center"
+        fresco:retryImage="@mipmap/ic_stub"
+        fresco:retryImageScaleType="center"
+        fresco:roundAsCircle="false" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff">
+
+
+        <TextView
+            android:id="@+id/tv_item_zero_use_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/tv_item_zero_use_num"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/zero_use_txt_gray"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_item_zero_use_num"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_item_zero_use_count"
+            android:gravity="center_vertical"
+            android:text="@string/zero_use_has"
+            android:textColor="@color/zero_use_txt_gray"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_item_zero_use_count"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:text="1"
+            android:textColor="@color/zero_use_txt_red"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/zero_use_line_gray" />
+</LinearLayout>

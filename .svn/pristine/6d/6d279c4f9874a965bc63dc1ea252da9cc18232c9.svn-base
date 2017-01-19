@@ -1,0 +1,440 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <include
+        android:id="@+id/toolbar_layout"
+        layout="@layout/layout_toolbar"></include>
+
+    <RelativeLayout
+        android:id="@+id/goods_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/light_gray"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/goto_car"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/integral_index_cart"
+            android:contentDescription="@string/cart"
+            android:padding="5dp"
+            android:src="@mipmap/cart" />
+
+        <Button
+            android:id="@+id/add_to_car"
+            style="@style/button_red"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@id/goto_car"
+            android:text="@string/integralBuyNow" />
+
+    </RelativeLayout>
+
+    <com.ewgvip.buyer.android.layout.ScrollViewContainer
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/goods_bottom"
+        android:layout_below="@id/toolbar_layout">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:divider="@drawable/divider_vertical_marginleft"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+                <RelativeLayout
+                    android:id="@+id/layout_goods_imgs"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/ig_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        fresco:failureImage="@mipmap/ic_stub"
+                        fresco:failureImageScaleType="center"
+                        fresco:placeholderImage="@mipmap/ic_stub"
+                        fresco:placeholderImageScaleType="center"
+                        fresco:retryImage="@mipmap/ic_stub"
+                        fresco:retryImageScaleType="center" />
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/goods_detialview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingBottom="16dp"
+                    android:paddingTop="8dp">
+
+                    <TextView
+                        android:id="@+id/goods_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="32dp"
+                        android:ellipsize="end"
+                        android:maxLines="3"
+                        android:textColor="@color/textdark"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/ISkyShopPrice_tag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/integral_require"
+                            android:textColor="@color/integral_index_select" />
+
+
+                        <TextView
+                            android:id="@+id/referencePrice_tag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@id/ISkyShopPrice_tag"
+                            android:layout_alignRight="@id/ISkyShopPrice_tag"
+                            android:layout_below="@id/ISkyShopPrice_tag"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/shop_price"
+                            android:textColor="@color/integral_index_select" />
+
+                        <TextView
+                            android:id="@+id/current_Price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/ISkyShopPrice_tag"
+                            android:layout_toRightOf="@+id/ISkyShopPrice_tag"
+                            android:text="5000积分"
+                            android:textColor="@color/red"
+                            android:textSize="26sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/needpaymoney"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_toRightOf="@+id/current_Price"
+                            android:text="+0.00元"
+                            android:textColor="@color/red" />
+
+                        <TextView
+                            android:id="@+id/goods_Price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/referencePrice_tag"
+                            android:layout_toRightOf="@+id/referencePrice_tag"
+                            android:textColor="@color/integral_index" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/layout_spec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/ig_time_type_tag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/ig_time_type"
+                        android:textColor="@color/integral_index_select" />
+
+                    <TextView
+                        android:id="@+id/ig_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/ig_time_type_tag"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@id/ig_time_type_tag"
+                        android:textColor="@color/get_coupon_success_go" />
+
+                    <TextView
+                        android:id="@+id/ig_limit_type_tag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ig_time_type_tag"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/ig_limit_type"
+                        android:textColor="@color/integral_index_select" />
+
+                    <TextView
+                        android:id="@+id/ig_limit_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/ig_limit_type_tag"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_toRightOf="@id/ig_limit_type_tag"
+                        android:textColor="@color/get_coupon_success_go" />
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/ig_user_Level_tag"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_below="@id/ig_limit_type_tag"-->
+                        <!--android:layout_marginBottom="16dp"-->
+                        <!--android:layout_marginLeft="16dp"-->
+                        <!--android:layout_marginTop="8dp"-->
+                        <!--android:textColor="@color/integral_index_select" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/ig_user_Level"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignBaseline="@id/ig_user_Level_tag"-->
+                        <!--android:layout_marginLeft="8dp"-->
+                        <!--android:layout_toRightOf="@id/ig_user_Level_tag"-->
+                        <!--android:paddingBottom="8dp"-->
+                        <!--android:textColor="@color/get_coupon_success_go" />-->
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_trans"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="16dp">
+
+                    <TextView
+                        android:id="@+id/freight_tag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/freight_tag"
+                        android:textColor="@color/integral_index_select" />
+
+                    <TextView
+                        android:id="@+id/freight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_toRightOf="@id/freight_tag"
+                        android:textColor="@color/get_coupon_success_go" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:id="@+id/inventory_tag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/inventory"
+                        android:textColor="@color/integral_index_select" />
+
+                    <TextView
+                        android:id="@+id/inventory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_toRightOf="@id/inventory_tag"
+                        android:textColor="@color/get_coupon_success_go" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/count_goods"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/ig_count_tag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/ig_count"
+                        android:textColor="@color/integral_index_select" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_toRightOf="@id/ig_count_tag">
+
+                        <ImageButton
+                            android:id="@+id/pikerMinus"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:background="@drawable/frame_grey"
+                            android:contentDescription="@string/img"
+                            android:src="@mipmap/minus" />
+
+                        <EditText
+                            android:id="@+id/editCount"
+                            android:layout_width="70dp"
+                            android:layout_height="32dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_weight="0.7"
+                            android:background="@drawable/frame_grey"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:minHeight="32dp"
+                            android:paddingLeft="4dp"
+                            android:paddingRight="4dp"
+                            android:textColorHint="@color/border"
+                            android:textSize="14sp" />
+
+                        <ImageButton
+                            android:id="@+id/pickerPlus"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:background="@drawable/frame_grey"
+                            android:contentDescription="@string/img"
+                            android:src="@mipmap/plus" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/store"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@color/white"
+                    android:paddingBottom="16dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/store_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="16dp"
+                        android:textColor="@color/textdark" />
+
+                    <ImageView
+                        android:id="@+id/store_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/store_name"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="8dp"
+                        android:src="@mipmap/heart_5" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16dp"
+                        android:contentDescription="@string/img"
+                        android:src="@mipmap/arrow" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:background="@color/light_gray">
+
+                    <TextView
+                        android:id="@+id/pull_up"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/pull_up"
+                        android:textColor="@color/textdark" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_toLeftOf="@id/pull_up"
+                        android:background="@color/divgray" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_toRightOf="@id/pull_up"
+                        android:background="@color/divgray" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <WebView
+                    android:id="@+id/webDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </com.ewgvip.buyer.android.layout.ScrollViewContainer>
+
+</RelativeLayout>

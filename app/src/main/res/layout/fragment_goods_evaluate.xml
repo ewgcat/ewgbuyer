@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:divider="@drawable/divider_vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:showDividers="middle"
+    tools:context="com.ewgvip.buyer.android.fragment.GoodsEvaluateFragment">
+
+    <RadioGroup
+        android:id="@+id/rgroup_evaluate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/evaluate_bg_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <RadioButton
+            android:id="@+id/rbtn_evaluate_all"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/evaluate_rbtn_select"
+            android:button="@null"
+            android:checked="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="@string/evaluate_all"
+            android:textColor="@drawable/evaluate_rbtn_select_tv"
+            android:textSize="13sp" />
+
+        <RadioButton
+            android:id="@+id/rbtn_evaluate_well"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/evaluate_rbtn_select"
+            android:button="@null"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="@string/evaluate_well"
+            android:textColor="@drawable/evaluate_rbtn_select_tv"
+            android:textSize="13sp" />
+
+        <RadioButton
+            android:id="@+id/rbtn_evaluate_middle"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/evaluate_rbtn_select"
+            android:button="@null"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="@string/evaluate_middle"
+            android:textColor="@drawable/evaluate_rbtn_select_tv"
+            android:textSize="13sp" />
+
+        <RadioButton
+            android:id="@+id/rbtn_evaluate_bad"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/evaluate_rbtn_select"
+            android:button="@null"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="@string/evaluate_bad"
+            android:textColor="@drawable/evaluate_rbtn_select_tv"
+            android:textSize="13sp" />
+
+    </RadioGroup>
+
+
+    <com.ewgvip.buyer.android.pulltorefresh.PullToRefreshListView
+        android:id="@+id/lv_evaluate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:background="@color/evaluate_list_bg_gray"></com.ewgvip.buyer.android.pulltorefresh.PullToRefreshListView>
+
+    <include
+        android:id="@+id/nodata"
+        layout="@layout/layout_nodata"></include>
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="273dp"
+    android:layout_height="411dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="273dp"
+        android:layout_height="411dp"
+        android:background="@drawable/redbg"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_close_popwinddow"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/close" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/logo3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="e网购优品"
+            android:textColor="#fff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="给你发了一个红包"
+            android:textColor="#fff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="恭喜发财，大吉大利"
+            android:textColor="#fff"
+            android:textSize="24sp" />
+
+
+        <TextView
+            android:id="@+id/iv_open_red_package"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="拆红包"
+            android:background="@drawable/openredpackage_bg"
+             />
+
+    </LinearLayout>
+
+</LinearLayout>

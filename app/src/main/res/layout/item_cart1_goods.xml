@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mylist_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp">
+
+    <View
+        android:id="@+id/check_area"
+        android:layout_width="40dp"
+        android:layout_height="96dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        style="@style/RoundCheckboxTheme"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/goods_img"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/checkBox"
+        android:background="@drawable/frame_grey"
+        android:contentDescription="@string/img"
+        android:padding="0.3dp"
+        fresco:failureImage="@mipmap/ic_stub"
+        fresco:failureImageScaleType="center"
+        fresco:placeholderImage="@mipmap/ic_stub"
+        fresco:placeholderImageScaleType="center"
+        fresco:retryImage="@mipmap/ic_stub"
+        fresco:retryImageScaleType="center" />
+
+
+    <RelativeLayout
+        android:id="@+id/goods_info"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_alignTop="@id/goods_img"
+        android:layout_toRightOf="@+id/goods_img">
+
+        <TextView
+            android:id="@+id/goods_price"
+            android:text="价格+0.00元"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:textColor="@color/red" />
+
+        <TextView
+            android:id="@+id/goods_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@id/goods_price"
+            android:ellipsize="end"
+            android:lines="2"
+            android:textColor="@color/textdark" />
+
+        <TextView
+            android:id="@+id/goods_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/goods_name"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="4.5dp"
+            android:textColor="@color/textlight" />
+
+
+        <TextView
+            android:id="@+id/goods_gsp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/goods_name"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="4.5dp"
+            android:layout_toLeftOf="@id/goods_count"
+            android:ellipsize="end"
+            android:lines="2"
+            android:textColor="@color/textlight" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/goods_edit"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_alignTop="@id/goods_img"
+        android:layout_toRightOf="@+id/goods_img"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/minus"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/frame_grey"
+            android:scaleType="centerInside"
+            android:src="@mipmap/minus" />
+
+        <ImageButton
+            android:id="@+id/plus"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/frame_grey"
+            android:scaleType="centerInside"
+            android:src="@mipmap/plus" />
+
+        <EditText
+            android:id="@+id/buy_count"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@id/plus"
+            android:layout_toRightOf="@+id/minus"
+            android:background="@drawable/frame_grey"
+            android:gravity="center"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLength="9"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:id="@+id/layout_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/minus"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp">
+
+            <ImageView
+                android:id="@+id/arrowdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/arrowdown" />
+
+
+            <TextView
+                android:id="@+id/goods_gsp_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="8dp"
+                android:layout_toLeftOf="@id/arrowdown"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:textColor="@color/textlight" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_no_goods_bg"
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/checkBox"
+        android:background="@mipmap/no_goods_maskbg"
+        android:padding="0.3dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_goods_sold_out"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/checkBox"
+        android:background="@mipmap/goods_sold_out"
+        android:padding="0.3dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

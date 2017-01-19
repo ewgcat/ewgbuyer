@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/appBarLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/toolbar_color"
+        app:layout_scrollFlags="scroll|enterAlways">
+
+        <RelativeLayout
+            android:id="@+id/search_top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height">
+
+            <TextView
+                android:id="@+id/tvSelect"
+                style="@style/top_right"
+                android:layout_alignParentRight="true"
+                android:text="@string/sQuery"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/search_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@id/tvSelect"
+                android:background="@drawable/rounded_white"
+                android:drawableLeft="@mipmap/search"
+                android:drawablePadding="4dp"
+                android:gravity="center_vertical"
+                android:hint="@string/typeSearchContext"
+                android:paddingLeft="4dp"
+                android:singleLine="true"
+                android:textColor="@color/textlight"
+                android:textSize="@dimen/textlarge" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+</android.support.design.widget.AppBarLayout>

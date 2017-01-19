@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include_title"
+        layout="@layout/layout_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/include_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="128dp"
+                android:background="@drawable/bg_button_select">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/image_goods"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    fresco:failureImage="@mipmap/ic_stub"
+                    fresco:failureImageScaleType="fitXY"
+                    fresco:placeholderImage="@mipmap/ic_stub"
+                    fresco:placeholderImageScaleType="fitXY"
+                    fresco:retryImage="@mipmap/ic_stub"
+                    fresco:retryImageScaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/tv_goods_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@id/image_goods"
+                    android:maxLines="2"
+                    android:textColor="@color/plugin_camera_black"
+                    android:textSize="@dimen/text_fifteen" />
+
+                <TextView
+                    android:id="@+id/tv_goods_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/image_goods"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@id/image_goods"
+                    android:maxLines="2"
+                    android:textColor="@color/plugin_camera_black"
+                    android:textSize="@dimen/text_fifteen" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/divgray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_button_select"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:background="@color/divgray" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_complain_theme"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/tv_complain_status_tag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:text="投诉状态"
+                        android:textColor="@color/complain_detail_select_theme"
+                        android:textSize="@dimen/textmin" />
+
+                    <TextView
+                        android:id="@+id/tv_complain_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_complain_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingBottom="16dp">
+
+                    <TextView
+                        android:id="@+id/tv_complain_datail_tag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="8dp"
+                        android:text="投诉内容"
+                        android:textColor="@color/complain_detail_select_theme"
+                        android:textSize="@dimen/textmin" />
+
+                    <EditText
+                        android:id="@+id/ed_complain_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:layout_alignTop="@id/tv_complain_datail_tag"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_toRightOf="@id/tv_complain_datail_tag"
+                        android:background="@drawable/edit_text_background"
+                        android:editable="false"
+                        android:gravity="left|top"
+                        android:maxLength="1000"
+                        android:paddingBottom="4dp"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:textColor="@color/textgrey"
+                        android:textSize="@dimen/textmin" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_inmates_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingBottom="16dp">
+
+                    <TextView
+                        android:id="@+id/tv_inmates_detail_tag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="8dp"
+                        android:text="申述内容"
+                        android:textColor="@color/complain_detail_select_theme"
+                        android:textSize="@dimen/textmin" />
+
+                    <EditText
+                        android:id="@+id/ed_inmates_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:layout_alignTop="@id/tv_inmates_detail_tag"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_toRightOf="@id/tv_inmates_detail_tag"
+                        android:background="@drawable/edit_text_background"
+                        android:editable="false"
+                        android:gravity="left|top"
+                        android:maxLength="1000"
+                        android:paddingBottom="4dp"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:textColor="@color/textgrey"
+                        android:textSize="@dimen/textmin" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:background="@color/divgray" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_picture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_button_select"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:background="@color/divgray" />
+
+                <LinearLayout
+                    android:id="@+id/ll_complain_picture"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_complain_picture_tag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:text="投诉图片"
+                        android:textColor="@color/complain_detail_select_theme"
+                        android:textSize="@dimen/textmin" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_complain_picture_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="132dp"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white">
+
+                            <com.facebook.drawee.view.SimpleDraweeView
+                                android:id="@+id/iv_complain_picture_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:layout_marginBottom="16dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginTop="16dp"
+                                fresco:failureImage="@mipmap/ic_stub"
+                                fresco:failureImageScaleType="fitXY"
+                                fresco:placeholderImage="@mipmap/ic_stub"
+                                fresco:placeholderImageScaleType="fitXY"
+                                fresco:retryImage="@mipmap/ic_stub"
+                                fresco:retryImageScaleType="fitXY" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white">
+
+                            <com.facebook.drawee.view.SimpleDraweeView
+                                android:id="@+id/iv_complain_picture_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:layout_marginBottom="16dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginTop="16dp"
+                                fresco:failureImage="@mipmap/ic_stub"
+                                fresco:failureImageScaleType="fitXY"
+                                fresco:placeholderImage="@mipmap/ic_stub"
+                                fresco:placeholderImageScaleType="fitXY"
+                                fresco:retryImage="@mipmap/ic_stub"
+                                fresco:retryImageScaleType="fitXY" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white">
+
+                            <com.facebook.drawee.view.SimpleDraweeView
+                                android:id="@+id/iv_complain_picture_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:layout_marginBottom="16dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginTop="16dp"
+                                fresco:failureImage="@mipmap/ic_stub"
+                                fresco:failureImageScaleType="fitXY"
+                                fresco:placeholderImage="@mipmap/ic_stub"
+                                fresco:placeholderImageScaleType="fitXY"
+                                fresco:retryImage="@mipmap/ic_stub"
+                                fresco:retryImageScaleType="fitXY" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_inmates_picture"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_inmates_picture_tag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:text="申述图片"
+                        android:textColor="@color/complain_detail_select_theme"
+                        android:textSize="@dimen/textmin" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_inmates_picture_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="132dp"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white">
+
+                            <com.facebook.drawee.view.SimpleDraweeView
+                                android:id="@+id/iv_inmates_picture_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:layout_marginBottom="16dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginTop="16dp"
+                                fresco:failureImage="@mipmap/ic_stub"
+                                fresco:failureImageScaleType="fitXY"
+                                fresco:placeholderImage="@mipmap/ic_stub"
+                                fresco:placeholderImageScaleType="fitXY"
+                                fresco:retryImage="@mipmap/ic_stub"
+                                fresco:retryImageScaleType="fitXY" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white">
+
+                            <com.facebook.drawee.view.SimpleDraweeView
+                                android:id="@+id/iv_inmates_picture_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:layout_marginBottom="16dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginTop="16dp"
+                                fresco:failureImage="@mipmap/ic_stub"
+                                fresco:failureImageScaleType="fitXY"
+                                fresco:placeholderImage="@mipmap/ic_stub"
+                                fresco:placeholderImageScaleType="fitXY"
+                                fresco:retryImage="@mipmap/ic_stub"
+                                fresco:retryImageScaleType="fitXY" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white">
+
+                            <com.facebook.drawee.view.SimpleDraweeView
+                                android:id="@+id/iv_inmates_picture_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:layout_marginBottom="16dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginTop="16dp"
+                                fresco:failureImage="@mipmap/ic_stub"
+                                fresco:failureImageScaleType="fitXY"
+                                fresco:placeholderImage="@mipmap/ic_stub"
+                                fresco:placeholderImageScaleType="fitXY"
+                                fresco:retryImage="@mipmap/ic_stub"
+                                fresco:retryImageScaleType="fitXY" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:background="@color/divgray" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_complain_conversation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_button_select"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:background="@color/divgray" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@color/white"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="16dp"
+                    android:text="对话记录"
+                    android:textSize="@dimen/text_fifteen" />
+
+                <LinearLayout
+                    android:id="@+id/ll_complain_conversation_chat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_send_complain_conversation_chat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@color/divgray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:background="@color/white">
+
+                            <TextView
+                                android:id="@+id/tv_conversation_tag"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="发布对话"
+                                android:textColor="@color/complain_detail_select_theme"
+                                android:textSize="@dimen/textmin" />
+
+                            <EditText
+                                android:id="@+id/ed_conversation_content"
+                                android:layout_width="match_parent"
+                                android:layout_height="72dp"
+                                android:layout_alignTop="@id/tv_conversation_tag"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_toRightOf="@id/tv_conversation_tag"
+                                android:background="@drawable/edit_text_background"
+                                android:gravity="left|top"
+                                android:maxLength="1000"
+                                android:paddingBottom="4dp"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:textSize="@dimen/textmin" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_complain_conversation_chat_done"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/b_send_conversation"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/frame_red_round_white_bg"
+                        android:text="发布对话"
+                        android:textColor="@color/complain_picture_text_color" />
+                    <Button
+                        android:id="@+id/button_refresh"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/frame_red_round_white_bg"
+                        android:text="刷新对话"
+                        android:textColor="@color/complain_picture_text_color" />
+
+                    <Button
+                        android:id="@+id/b_commit_complain"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/frame_red_round_white_bg"
+                        android:text="提交仲裁"
+                        android:textColor="@color/complain_picture_text_color" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:background="@color/divgray" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_complain_suggestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_button_select"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:background="@color/divgray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="16dp"
+                        android:text="仲裁意见:"
+                        android:textColor="@color/complain_detail_select_theme"
+                        android:textSize="@dimen/textmin" />
+
+                    <TextView
+                        android:id="@+id/tv_complain_suggestion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="16dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

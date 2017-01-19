@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bgcolor"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bgcolor">
+
+        <TextView
+            android:id="@+id/tv_day"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="today"
+            android:textColor="@color/foot_point_title_day"
+            android:textSize="@dimen/textsmall" />
+
+        <Button
+            android:id="@+id/tv_remove_all"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/button_rounded_red_frame"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:text="@string/remove_today_foot_point"
+            android:textColor="@color/integral_index_select"
+            android:textSize="@dimen/textsmall" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray" />
+
+</LinearLayout>

@@ -1,0 +1,201 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/white"
+                android:padding="16dp"
+                android:text="@string/goods_return_tip"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/white"
+                android:paddingLeft="16dp"
+                android:paddingTop="16dp"
+                android:text="@string/goods_info"
+                android:textColor="@color/textdark" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/white">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/iv_goods_icon"
+                    android:layout_width="84dp"
+                    android:layout_height="84dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    fresco:failureImage="@mipmap/ic_stub"
+                    fresco:failureImageScaleType="center"
+                    fresco:placeholderImage="@mipmap/ic_stub"
+                    fresco:placeholderImageScaleType="center"
+                    fresco:retryImage="@mipmap/ic_stub"
+                    fresco:retryImageScaleType="center" />
+
+                <TextView
+                    android:id="@+id/goods_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_toRightOf="@id/iv_goods_icon"
+                    android:maxLines="2"
+                    android:textColor="@color/textdark" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="@dimen/ui_10_dip"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tv_apply_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/ui_10_dip"
+                    android:layout_marginTop="8dp"
+                    android:paddingLeft="16dp"
+                    android:text="@string/applycount"
+                    android:textColor="@color/textdark" />
+
+                <RelativeLayout
+                    android:id="@+id/ll_apply_count"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_apply_count">
+
+
+                    <ImageButton
+                        android:id="@+id/pikerMinus"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="12dp"
+                        android:background="@drawable/frame_grey"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/minus" />
+
+                    <ImageButton
+                        android:id="@+id/pikerPlus"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/frame_grey"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/plus" />
+
+                    <EditText
+                        android:id="@+id/etCount"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_toLeftOf="@id/pikerPlus"
+                        android:layout_toRightOf="@+id/pikerMinus"
+                        android:background="@drawable/frame_grey"
+                        android:gravity="center"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:text="1"
+                        android:maxLength="9"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_return_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll_apply_count"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="您最多可以退：" />
+
+                    <TextView
+                        android:id="@+id/tv_totalCount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:inputType="number"
+                        android:text="0"
+                         />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/white"
+                android:paddingLeft="16dp"
+                android:paddingTop="16dp"
+                android:text="@string/apply_content"
+                android:textColor="@color/textdark" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="16dp">
+
+                <EditText
+                    android:id="@+id/return_goods_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:gravity="top"
+                    android:textColor="#333333"
+                    android:hint="@string/apply_content_tip"
+                    android:maxLines="4" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/order_submit"
+                style="@style/button_red"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/yes" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/action_cart"
+        android:icon="@mipmap/cart_icon"
+        android:title="@string/cart"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_index"
+        android:icon="@mipmap/index_icon1"
+        android:title="@string/index"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_share"
+        android:title="@string/share"
+        android:icon="@mipmap/syshare"
+        app:showAsAction="never" />
+
+</menu>

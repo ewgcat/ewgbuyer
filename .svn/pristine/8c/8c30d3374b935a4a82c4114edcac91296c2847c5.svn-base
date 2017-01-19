@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".fragment.CouponsGetIndexFragment">
+
+
+    <include
+        android:id="@+id/toolbar_layout"
+        layout="@layout/layout_toolbar"></include>
+
+    <ListView
+        android:id="@+id/lv_coupon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_layout"
+        android:background="@color/light_gray"
+        android:divider="@null" />
+
+    <include
+        android:id="@+id/nodata"
+        layout="@layout/layout_nodata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_layout"></include>
+
+</LinearLayout>

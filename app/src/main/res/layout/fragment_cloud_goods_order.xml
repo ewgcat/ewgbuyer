@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:focusableInTouchMode="true">
+
+    <include
+        android:id="@+id/toolbar_layout"
+        layout="@layout/layout_toolbar"></include>
+
+    <com.ewgvip.buyer.android.pulltorefresh.PullToRefreshListView
+        android:id="@+id/listview_select"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_layout"
+        android:cacheColorHint="@color/white"
+        android:divider="@color/divgray"
+        android:dividerHeight="0.3dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:scrollbars="vertical|none"
+        android:smoothScrollbar="true"
+        android:layout_above="@+id/rl_layout"
+        android:visibility="visible">
+
+    </com.ewgvip.buyer.android.pulltorefresh.PullToRefreshListView>
+
+    <RelativeLayout
+        android:id="@+id/rl_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/ll_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:text="商品总价：" />
+
+            <TextView
+                android:id="@+id/tv_goodstotal"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="12"
+                android:textColor="@color/toolbar_color"
+                android:textSize="@dimen/textmin" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:text="元"
+                android:textColor="@color/toolbar_color"
+                android:textSize="@dimen/textmin" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/order_submit"
+            style="@style/button_red"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/ll_layout"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="提交" />
+    </RelativeLayout>
+
+</RelativeLayout>

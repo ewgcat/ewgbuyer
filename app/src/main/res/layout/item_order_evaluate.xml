@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/order_evaluate_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/iv_item_order_evaluate"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_centerInParent="true"
+                fresco:failureImage="@mipmap/ic_stub"
+                fresco:failureImageScaleType="center"
+                fresco:placeholderImage="@mipmap/ic_stub"
+                fresco:placeholderImageScaleType="center"
+                fresco:retryImage="@mipmap/ic_stub"
+                fresco:retryImageScaleType="center"
+                fresco:roundAsCircle="false" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_item_order_evaluate_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textColor="@color/order_evaluate_name_gray"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_item_order_evaluate"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="@string/order_evaluate_et_hint"
+            android:maxLines="5"
+            android:padding="10dp"
+            android:textColor="@color/order_evaluate_et_hint_gray"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/order_evaluate_white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="@string/order_evaluate_service"
+                android:textSize="13sp" />
+
+            <RatingBar
+                android:id="@+id/rbar_item_order_evaluate_service"
+                style="@style/foodRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:isIndicator="false"
+                android:stepSize="1"
+                android:numStars="5"
+                android:rating="5" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="@string/order_evaluate_descript"
+                android:textSize="13sp" />
+
+            <RatingBar
+                android:id="@+id/rbar_item_order_evaluate_descript"
+                style="@style/foodRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:stepSize="1"
+                android:rating="5" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="@string/order_evaluate_speed"
+                android:textSize="13sp" />
+
+            <RatingBar
+                android:id="@+id/rbar_item_order_evaluate_speed"
+                style="@style/foodRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:stepSize="1"
+                android:rating="5" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/order_evaluate_evaluate"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/rgroup_item_order_evaluate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbtn_item_order_evaluate_well"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawableLeft="@mipmap/evaluate_well"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/order_evaluate_well"
+                        android:textColor="@color/order_evaluate_evaluate_gray"
+                        android:textSize="15sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbtn_item_order_evaluate_middle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawableLeft="@mipmap/evaluate_middle"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/order_evaluate_middle"
+                        android:textColor="@color/order_evaluate_evaluate_gray"
+                        android:textSize="15sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbtn_item_order_evaluate_bad"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawableLeft="@mipmap/evaluate_bad"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/order_evaluate_bad"
+                        android:textColor="@color/order_evaluate_evaluate_gray"
+                        android:textSize="15sp" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/order_evaluate_white"
+        android:orientation="vertical">
+
+        <GridView
+            android:id="@+id/gview_item_order_evaluate"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/order_evaluate_white"
+            android:numColumns="4"
+            android:padding="10dp"
+            android:scrollbars="none"
+            android:visibility="gone"></GridView>
+
+        <Button
+            android:id="@+id/btn_item_order_evaluate_photo"
+            style="@style/button_red"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:text="@string/order_evaluate_add_photo" />
+    </LinearLayout>
+</LinearLayout>

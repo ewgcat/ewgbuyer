@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/order_search_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fafafa"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp">
+
+    <TextView
+        android:id="@+id/tv_order_detail_title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:gravity="center_vertical"
+        android:text="商品清单"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/goods_img"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_below="@+id/tv_order_detail_title"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/checkBox"
+        android:background="@drawable/frame_grey"
+        android:contentDescription="@string/img"
+        android:padding="0.3dp"
+        fresco:failureImage="@mipmap/ic_stub"
+        fresco:failureImageScaleType="center"
+        fresco:placeholderImage="@mipmap/ic_stub"
+        fresco:placeholderImageScaleType="center"
+        fresco:retryImage="@mipmap/ic_stub"
+        fresco:retryImageScaleType="center" />
+
+    <RelativeLayout
+        android:id="@+id/goods_info"
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:layout_alignTop="@id/goods_img"
+        android:layout_below="@+id/tv_order_detail_title"
+        android:layout_toRightOf="@+id/goods_img">
+
+        <TextView
+            android:id="@+id/goods_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:textColor="@color/red" />
+
+        <TextView
+            android:id="@+id/goods_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@id/goods_price"
+            android:ellipsize="end"
+            android:lines="2"
+            android:textColor="@color/textdark" />
+
+        <TextView
+            android:id="@+id/goods_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/goods_name"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="4.5dp"
+            android:textColor="@color/textlight" />
+
+
+        <TextView
+            android:id="@+id/goods_gsp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/goods_name"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_toLeftOf="@id/goods_count"
+            android:ellipsize="end"
+            android:lines="2"
+            android:textColor="@color/textlight" />
+
+        <LinearLayout
+            android:id="@+id/ll_combin_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/goods_gsp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/bt_details"
+                style="@style/button_red"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="详细信息"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_advance_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/goods_gsp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_advance_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

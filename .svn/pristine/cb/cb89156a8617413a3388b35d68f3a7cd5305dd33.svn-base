@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="8dp" >
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/textdark" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/name"
+        android:textColor="@color/red" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginTop="4dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:orientation="horizontal"
+            android:paddingRight="16dp" >
+
+            <RelativeLayout
+                android:layout_width="84dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="16dp"
+                android:background="@color/white" >
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="84dp"
+                    android:layout_height="84dp" />
+
+                <TextView
+                    android:id="@+id/goods_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/img"
+                    android:ellipsize="end"
+                    android:lines="2"
+                    android:textColor="@color/textdark" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/suits"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="120dp" >
+
+                <ImageView
+                    android:id="@+id/equals"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="35dp"
+                    android:src="@mipmap/equals" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toRightOf="@id/equals" >
+
+                    <TextView
+                        android:id="@+id/save"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:textColor="@color/red" />
+
+                    <Button
+                        android:id="@+id/addToCar"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_below="@id/save"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/rounded_red"
+                        android:text="@string/addToCar"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor">
+
+    <RelativeLayout
+        android:id="@+id/rl_cloud_goods_status_end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_cloud_goods_status_during"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/cloud_goods_detail_background">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sv_acquire_user_show"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            fresco:failureImage="@mipmap/ic_stub"
+            fresco:failureImageScaleType="center"
+            fresco:placeholderImage="@mipmap/ic_stub"
+            fresco:placeholderImageScaleType="center"
+            fresco:retryImage="@mipmap/ic_stub"
+            fresco:retryImageScaleType="center" />
+
+        <TextView
+            android:id="@+id/tv_acquire_ursename_target"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/sv_acquire_user_show"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/sv_acquire_user_show"
+            android:text="获奖者：" />
+
+        <TextView
+            android:id="@+id/tv_acquire_ursename_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/sv_acquire_user_show"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/tv_acquire_ursename_target"
+            android:text="假酒害人啊"
+            android:textColor="@color/blue" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_acquire_ursename_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/sv_acquire_user_show"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/tv_acquire_ursename_detail"
+            android:text="（砍省铁岭）"
+            android:textColor="@color/green" />
+
+        <TextView
+            android:id="@+id/tv_acquire_urseid_target"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_acquire_ursename_target"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/sv_acquire_user_show"
+            android:text="用户ID：" />
+
+        <TextView
+            android:id="@+id/tv_acquire_urseid_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_acquire_urseid_target"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_toRightOf="@id/tv_acquire_ursename_target"
+            android:text="119119（唯一不变标识）" />
+
+        <TextView
+            android:id="@+id/tv_acquire_urse_number_target"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_acquire_urseid_target"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/sv_acquire_user_show"
+            android:text="本次参与：" />
+
+        <TextView
+            android:id="@+id/tv_acquire_urse_number_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_acquire_urse_number_target"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/tv_acquire_urse_number_target"
+            android:text="11人次" />
+
+        <TextView
+            android:id="@+id/tv_acquire_urse_number_detail_go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_acquire_urse_number_target"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/tv_acquire_urse_number_detail"
+            android:text="查看Ta的号码"
+            android:textColor="@color/blue" />
+
+        <TextView
+            android:id="@+id/tv_acquire_urse_time_target"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_acquire_urse_number_target"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/sv_acquire_user_show"
+            android:text="揭晓时间：" />
+
+        <TextView
+            android:id="@+id/tv_acquire_urse_time_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_acquire_urse_time_target"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_toRightOf="@id/tv_acquire_ursename_target"
+            android:text="2016-02-17 10:41:03" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

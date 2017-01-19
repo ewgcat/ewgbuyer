@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:divider="@drawable/divider_vertical"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/white">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:text="@string/balance"
+                        android:textColor="@color/textdark"
+                        android:textSize="@dimen/textsmall" />
+
+                    <TextView
+                        android:id="@+id/balance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16dp"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/textsmall" />
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:gravity="center"
+                        android:text="充值金额:"
+                        android:textColor="@color/textdark"
+                        android:textSize="@dimen/textsmall" />
+
+                    <EditText
+                        android:id="@+id/et_please_money"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@color/white"
+                        android:gravity="center_vertical|right"
+                        android:hint="请输入充值金额"
+                        android:inputType="numberDecimal"
+                        android:maxEms="10"
+                        android:singleLine="true"
+                        android:textColor="@color/textdark"
+                        android:textSize="@dimen/textsmall" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_recharge"
+                style="@style/button_red"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height_chang"
+                android:layout_margin="16dp"
+                android:text="充值"
+                android:textSize="@dimen/textlarge" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

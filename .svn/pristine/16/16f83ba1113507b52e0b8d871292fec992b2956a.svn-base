@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ewgvip.buyer.android.layout.MyRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray">
+
+    <ImageView
+        android:id="@+id/iv_item_order_evaluate_photo_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:scaleType="fitXY" />
+</com.ewgvip.buyer.android.layout.MyRelativeLayout>

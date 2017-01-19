@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/white">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:lines="2"
+        android:textColor="@color/textgrey" />
+
+
+    <ImageView
+        android:id="@+id/div"
+        android:layout_width="3dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="11dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:background="@color/gray" />
+
+    <ImageView
+        android:id="@+id/trans_img"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/textView2"
+        android:contentDescription="@string/arrow"
+        android:src="@mipmap/logistics_round" />
+
+    <TextView
+        android:id="@+id/textView1"
+        style="@style/textdark"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_toRightOf="@+id/trans_img" />
+
+</RelativeLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/layout_toolbar"></include>
+
+    <LinearLayout
+        android:id="@+id/layout_type"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/top"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/textdark"
+            android:text="@string/invoiceType"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+            <RadioButton
+                android:id="@+id/regularInvoice"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:button="@null"
+                android:checked="true"
+                android:drawableLeft="@drawable/checkbox_round"
+                android:drawablePadding="5dp"
+                android:text="@string/regularInvoice"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/valueAddedTaxInvoice"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:button="@null"
+                android:drawableLeft="@drawable/checkbox_round"
+                android:drawablePadding="5dp"
+                android:text="@string/valueAddedTaxInvoice"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/bt_details_invoice"
+            style="@style/button_red"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="16dp"
+            android:visibility="gone"
+            android:text="详情" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/layout_type"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp">
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/textdark"
+            android:layout_alignParentLeft="true"
+            android:text="@string/invoiceTitle"
+            android:textSize="18sp" />
+
+
+        <EditText
+            android:id="@+id/invoiceTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:maxEms="50"
+            android:focusable="true"
+            android:maxLines="3"
+            android:paddingLeft="10dp"
+            android:text="@string/individual" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/yes"
+        style="@style/button_red"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/layout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/yes"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yes"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="专用发票资质上传及审核结果查询地址：" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="个人中心→账号管理→增票资质→添加或修改" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="*  注意：只能在电脑端操作"
+                android:textColor="@color/button_red" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_no_invoice"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:layout_marginLeft="7dp"
+                android:textColor="@color/button_red"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/button_red"
+                android:text=" 当前没有可用的专用发票"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

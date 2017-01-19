@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <include
+        android:id="@+id/toolbar_layout"
+        layout="@layout/layout_toolbar"></include>
+
+    <ListView
+        android:id="@+id/lv_order_evaluate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_button_conmmit"
+        android:layout_below="@+id/toolbar_layout">
+
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/rl_button_conmmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="8dp"
+        >
+
+        <CheckBox
+            android:id="@+id/cb_noname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="匿名评价"
+            android:button="@null"
+            android:drawableLeft="@drawable/checkbox_round"
+            android:drawablePadding="8dp"
+            android:layout_centerVertical="true"
+            />
+        <Button
+            android:id="@+id/btn_order_evaluate_commit_btn"
+            style="@style/button_red"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/order_evaluate_commit"
+            android:layout_alignParentRight="true"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

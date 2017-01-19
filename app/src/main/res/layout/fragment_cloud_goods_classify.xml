@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <include
+        android:id="@+id/toolbar_layout"
+        layout="@layout/layout_toolbar_zerosell"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_layout">
+
+        <LinearLayout
+            android:id="@+id/ll_goods_classify_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rl_cloud_all_goods"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                >
+
+                <TextView
+                    android:id="@+id/tv_cloud_all_goods"
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cloud_all_goods"
+                    android:textColor="@color/cloud_text_grey"
+                    android:textSize="@dimen/textmin"
+                    android:layout_centerVertical="true"/>
+
+                <ImageView
+                    android:id="@+id/iv_cloud_all_goods"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="4dp"
+                    android:src="@mipmap/pull_down"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_cloud_all_goods"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/cloud_line_g"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginBottom="8dp"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_cloud_popularity_goods"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_marginLeft="16dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_cloud_popularity_goods"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cloud_popularity_goods"
+                    android:textColor="@color/cloud_text_grey"
+                    android:textSize="@dimen/textmin"
+                    android:layout_centerVertical="true"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_cloud_new_goods"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_cloud_new_goods"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cloud_new_goods"
+                    android:textColor="@color/cloud_text_grey"
+                    android:textSize="@dimen/textmin"
+                    android:layout_centerVertical="true"
+                   />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_cloud_surplus_change"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_cloud_surplus_change"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cloud_surplus_change"
+                    android:textColor="@color/cloud_text_grey"
+                    android:textSize="@dimen/textmin"
+                    android:layout_centerVertical="true"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_cloud_all_count_change"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="match_parent"
+             >
+
+                <TextView
+                    android:id="@+id/tv_cloud_all_count_change"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cloud_all_change"
+                    android:textSize="@dimen/textmin"
+                    android:textColor="@color/cloud_text_grey"
+                    android:layout_centerVertical="true"/>
+
+                <ImageView
+                    android:id="@+id/iv_cloud_all_count_change"
+                    android:layout_width="10dp"
+                    android:layout_height="13dp"
+                    android:layout_toRightOf="@id/tv_cloud_all_count_change"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:src="@mipmap/priceno"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ll_goods_classify_title">
+
+            <include layout="@layout/fragment_listview_single"></include>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

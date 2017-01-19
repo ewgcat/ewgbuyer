@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/toolbar_color"
+    android:theme="@style/AppTheme.AppBarOverlay">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="50dp"
+            android:layout_height="@dimen/toolbar_height"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+
+            >
+            <TextView
+                android:id="@+id/tv_changeway_all"
+                android:layout_width="70dp"
+                android:layout_height="56dp"
+                android:layout_marginLeft="50dp"
+                android:gravity="center"
+                android:text="全部"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textmax" />
+
+            <ImageView
+                android:id="@+id/iv_threecorn"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_toRightOf="@+id/tv_changeway_all"
+                android:src="@mipmap/downchange" />
+        </RelativeLayout>
+        <!--<Spinner-->
+        <!--android:id="@+id/sp_detail"-->
+        <!--android:layout_width="80dp"-->
+        <!--android:layout_height="56dp"-->
+        <!--android:layout_marginLeft="60dp"-->
+        <!--android:entries="@array/changeway"-->
+        <!--style="@style/Base.TextAppearance.AppCompat.Widget.PopupMenu.Small"-->
+        <!--/>-->
+    </FrameLayout>
+</android.support.design.widget.AppBarLayout>

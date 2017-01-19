@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sv_cloud_goods_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            fresco:failureImage="@mipmap/ic_stub"
+            fresco:failureImageScaleType="center"
+            fresco:placeholderImage="@mipmap/ic_stub"
+            fresco:placeholderImageScaleType="center"
+            fresco:retryImage="@mipmap/ic_stub"
+            fresco:retryImageScaleType="center" />
+
+        <ImageView
+            android:id="@+id/iv_cloud_goods_detail"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/cloud_purchase_coupons" />
+    </RelativeLayout>
+</LinearLayout>

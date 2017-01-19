@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/express_address_background">
+
+    <TextView
+        android:id="@+id/tv_express_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="地址名称"
+        android:textColor="@color/red"
+        android:textSize="@dimen/text_twenty_two" />
+
+    <TextView
+        android:id="@+id/tv_address_name_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_express_title"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/address_detail"
+        android:textColor="@color/express_address_detail"
+        android:textSize="@dimen/textlarge" />
+
+    <TextView
+        android:id="@+id/tv_address_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_address_name_detail"
+        android:layout_below="@id/tv_address_name_detail"
+        android:layout_marginTop="16dp"
+        android:text="地址名称"
+        android:textColor="@color/gray_sharp"
+        android:textSize="@dimen/text_fifteen" />
+
+    <TextView
+        android:id="@+id/tv_phone_number_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_address_name"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/phone_number"
+        android:textColor="@color/express_address_detail"
+        android:textSize="@dimen/textlarge" />
+
+    <TextView
+        android:id="@+id/tv_phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_address_name_detail"
+        android:layout_below="@id/tv_phone_number_detail"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="16dp"
+        android:text="地址名称"
+        android:textColor="@color/gray_sharp"
+        android:textSize="@dimen/text_fifteen" />
+
+    <Button
+        android:id="@+id/b_commit_know"
+        style="@style/button_white_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_phone_number"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/konw_the_detail"
+        android:textColor="@color/express_address_button"
+        android:textSize="@dimen/textlarge" />
+
+</RelativeLayout>

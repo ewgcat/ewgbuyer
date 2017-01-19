@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:background="@color/bgcolor">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_goods_icon"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        fresco:failureImage="@mipmap/ic_stub"
+        fresco:failureImageScaleType="center"
+        fresco:placeholderImage="@mipmap/ic_stub"
+        fresco:placeholderImageScaleType="center"
+        fresco:retryImage="@mipmap/ic_stub"
+        fresco:retryImageScaleType="center" />
+
+    <TextView
+        android:id="@+id/tv_goods_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_goods_icon"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_toRightOf="@id/iv_goods_icon"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="name"
+        android:textColor="@color/textdark"
+        android:textSize="@dimen/text_margin" />
+
+    <TextView
+        android:id="@+id/tv_goods_last"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_goods_icon"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@id/iv_goods_icon"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/hint_gray" />
+
+    <RelativeLayout
+        android:id="@+id/rl_goods_price"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_above="@id/tv_goods_last"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@id/iv_goods_icon">
+
+        <TextView
+            android:id="@+id/tv_goods_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="8000积分"
+            android:textColor="@color/red"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_goods_price_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/tv_goods_price"
+            android:text="+0.00元"
+            android:textColor="@color/red"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_goods_vip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/rl_goods_price"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:text=""
+        android:textColor="@color/dark_gray" />
+
+</RelativeLayout>

@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <FrameLayout
+            android:id="@+id/linearMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="false"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include layout="@layout/layout_goodslist_toolbar"></include>
+
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tablayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@color/white"
+                    app:layout_scrollFlags="scroll|enterAlways"
+                    app:tabGravity="fill"
+                    app:tabIndicatorColor="@color/toolbar_color"
+                    app:tabIndicatorHeight="0dp"
+                    app:tabMode="fixed"
+                    app:tabSelectedTextColor="@color/toolbar_color"
+                    app:tabTextColor="@color/textlight"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:background="@color/divgray"></View>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/goods_list_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:scrollbars="vertical" />
+
+
+                <include
+                    android:id="@+id/nodata"
+                    layout="@layout/layout_nodata"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"></include>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="@dimen/fab_margin"
+                android:src="@mipmap/arrow_top" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/linearSub"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="#F4F5F7"
+            android:clickable="true"
+            android:orientation="vertical">
+
+            <android.support.v4.widget.DrawerLayout
+                android:id="@+id/drawer_sub"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/relativeMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/toolbar_height"
+                        android:background="@drawable/goods_select_linear">
+
+                        <TextView
+                            android:id="@+id/tvCancel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="10dp"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="@string/cancel"
+                            android:textColor="@color/text"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="@string/sQuery"
+                            android:textColor="@android:color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/tvSubmit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="@string/yes"
+                            android:textColor="@color/text"
+                            android:textSize="16dp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_choose"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_below="@id/relativeMenu"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:checked="false"
+                            android:id="@+id/cbox_goods_self_filter"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/cbox_filter_select_bg"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="自营"
+                            android:textColor="@drawable/cbox_red_text" />
+
+                        <CheckBox
+                            android:checked="false"
+                            android:id="@+id/cbox_goods_payafter_filter"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/cbox_filter_select_bg"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="货到付款"
+                            android:textColor="@drawable/cbox_red_text" />
+
+                        <CheckBox
+                            android:checked="false"
+                            android:id="@+id/cbox_goods_inventory_filter"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/cbox_filter_select_bg"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="仅看有货"
+                            android:textColor="@drawable/cbox_red_text" />
+                    </LinearLayout>
+
+                    <ScrollView
+                        android:id="@+id/scrollView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/layout_choose"
+                        android:overScrollMode="never">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/linearSelect"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/goods_select_list"
+                                    android:orientation="vertical"
+                                    android:paddingBottom="0.3dp"
+                                    android:paddingTop="0.3dp"></LinearLayout>
+
+                                <Button
+                                    android:id="@+id/btnClear"
+                                    android:layout_width="150dp"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginBottom="15dp"
+                                    android:layout_marginTop="15dp"
+                                    android:background="@drawable/goods_select_clear"
+                                    android:text="@string/sClearSelect"
+                                    android:textColor="@drawable/goods_select_clear_text" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </ScrollView>
+
+                    <RelativeLayout
+                        android:id="@+id/relativeNoData"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/tvNoData"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="@string/nodata" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:clickable="true"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/goods_select_linear"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:id="@+id/imgBack"
+                            android:layout_width="24dp"
+                            android:layout_height="22dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:src="@mipmap/coo_img_viewer_back" />
+
+                        <TextView
+                            android:id="@+id/tvBrand"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="18dp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#F4F5F7"
+                        android:orientation="vertical">
+
+                        <ListView
+                            android:id="@+id/listViewSub"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/goods_select_list"
+                            android:divider="@null"
+                            android:dividerHeight="0dp"
+                            android:listSelector="@android:color/transparent"
+                            android:overScrollMode="never"
+                            android:paddingBottom="0.3dp"
+                            android:paddingTop="0.3dp"></ListView>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v4.widget.DrawerLayout>
+        </LinearLayout>
+    </android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>

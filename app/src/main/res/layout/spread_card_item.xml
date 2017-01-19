@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_card_code"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_grade_name"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="4dp"
+        android:textSize="20sp"
+        android:text="当前等级:"
+        android:textColor="@color/green"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="6dp"
+       android:text="赠送会员卡信息："
+        android:layout_marginLeft="16dp"
+        android:textSize="18sp"
+        android:textColor="@color/textdark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_card_no"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="4dp"
+        android:textSize="16sp"
+        android:textColor="@color/textdark"
+        android:text="账号："
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_expressly_password"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="4dp"
+        android:textSize="16sp"
+        android:textColor="@color/textdark"
+        android:text="密码：******  点击查看密码"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+<View
+    android:background="@color/textgrey"
+    android:layout_width="match_parent"
+    android:layout_height="4dp"/>
+</LinearLayout>

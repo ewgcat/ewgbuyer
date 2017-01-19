@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_index"
+        android:icon="@mipmap/index_icon1"
+        android:orderInCategory="100"
+        android:title="首页"
+        app:showAsAction="withText"
+       />
+
+
+    <item
+        android:id="@+id/iv_billingDetail"
+        android:icon="@mipmap/listtoo"
+        android:orderInCategory="100"
+        android:title="账单"
+        app:showAsAction="always" />
+</menu>

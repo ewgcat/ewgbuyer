@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/layout_toolbar"></include>
+
+
+    <TextView
+        android:id="@+id/nocoupons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top"
+        android:gravity="center"
+        android:text="@string/nocoupons"
+        android:textColor="@color/textdark"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <com.ewgvip.buyer.android.pulltorefresh.PullToRefreshListView
+        android:id="@+id/coupons_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/white"
+        android:dividerHeight="3dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:padding="2dp"
+        android:scrollbars="none"
+        android:smoothScrollbar="true"></com.ewgvip.buyer.android.pulltorefresh.PullToRefreshListView>
+
+</RelativeLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/layout_toolbar" />
+
+    <Button
+        android:id="@+id/btn_fragment_address_edit"
+        style="@style/button_red"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:divider="@drawable/divider_vertical"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:layout_width="96dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:text="@string/address_user_name"
+                android:textColor="@color/textdark"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_address_edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:hint="@string/address_user_name_hint"
+                android:maxLength="8"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:maxLines="1"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:layout_width="96dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:text="@string/address_user_phone"
+                android:textColor="@color/textdark"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_address_edit_tel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:hint="@string/address_user_phone_hint"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:maxLines="1"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:layout_width="96dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:text="@string/address_user_area"
+                android:textColor="@color/textdark"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_address_edit_area"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:hint="请选择所在区域"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:maxLines="1"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:layout_width="96dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:text="@string/address_user_address"
+                android:textColor="@color/textdark"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_address_edit_address"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:hint="@string/address_user_address_hint"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:maxLines="1"
+                android:maxLength="20"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:layout_width="96dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:text="身份证号:"
+                android:textColor="@color/textdark"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_address_edit_card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:hint="请输入身份证号码"
+                android:inputType="number"
+                android:digits="0123456789xX"
+                android:maxLength="18"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:maxLines="1"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

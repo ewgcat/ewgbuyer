@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="136dp">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_goods_icon"
+        android:layout_width="104dp"
+        android:layout_height="104dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        fresco:failureImage="@mipmap/ic_stub"
+        fresco:failureImageScaleType="center"
+        fresco:placeholderImage="@mipmap/ic_stub"
+        fresco:placeholderImageScaleType="center"
+        fresco:retryImage="@mipmap/ic_stub"
+        fresco:retryImageScaleType="center" />
+
+    <TextView
+        android:id="@+id/tv_goods_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_goods_icon"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/iv_goods_icon"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="name"
+        android:textColor="@color/textdark"
+        android:textSize="@dimen/textsmall" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="8dp"
+        android:textColor="@color/hint_gray" />
+
+</RelativeLayout>

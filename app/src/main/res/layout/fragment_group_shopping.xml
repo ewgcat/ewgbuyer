@@ -1,0 +1,187 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.ewgvip.buyer.android.fragment.GroupShoppingFragment">
+
+    <include layout="@layout/layout_toolbar"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/group_shopping_line_gray" />
+
+        <LinearLayout
+            android:id="@+id/goods_list_orderby"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rlArea"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true">
+
+                <TextView
+                    android:id="@+id/groupDistrict"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/tv_area"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/textmin" />
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="@dimen/ui_10_dip"
+                    android:background="@mipmap/drag_down" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:background="@mipmap/list_top_divider" />
+
+            <RelativeLayout
+                android:id="@+id/rlClass"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true">
+
+                <TextView
+                    android:id="@+id/groupClassify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/goodsclass"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/textmin" />
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="@dimen/ui_10_dip"
+                    android:background="@mipmap/drag_down" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:background="@mipmap/list_top_divider" />
+
+            <RelativeLayout
+                android:id="@+id/rlPrice"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true">
+
+                <TextView
+                    android:id="@+id/groupPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/tv_sort"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/textmin" />
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="@dimen/ui_10_dip"
+                    android:background="@mipmap/drag_down" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/backgroundgray"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/refresh"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/lighter_gray">
+
+            <TextView
+                android:id="@+id/showLocalArea"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:gravity="center_vertical"
+                android:textColor="@color/gray_darker"
+                android:textSize="@dimen/textsmall" />
+
+            <ImageButton
+                android:id="@+id/ib_refresh"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dip"
+                android:background="@mipmap/refresh" />
+        </RelativeLayout>
+
+        <com.ewgvip.buyer.android.pulltorefresh.PullToRefreshListView
+            android:id="@+id/goods_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/refresh"
+            android:layout_marginTop="1dp"
+            android:background="@color/lighter_gray"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@color/divgray"
+            android:dividerHeight="1dp"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:smoothScrollbar="true" />
+
+        <include
+            android:id="@+id/nodata"
+            layout="@layout/layout_nodata"></include>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

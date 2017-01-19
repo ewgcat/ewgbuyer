@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/toolbar_color"
+    android:theme="@style/AppTheme.AppBarOverlay">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/toolbar_color"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <RelativeLayout
+            android:id="@+id/main_top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height">
+
+
+            <RelativeLayout
+                android:id="@+id/scan_qr"
+                android:layout_width="50dp"
+                android:layout_height="@dimen/toolbar_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/leftupscanning" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/sort_top_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@id/scan_qr"
+                android:background="@drawable/rounded_white"
+                android:drawableLeft="@mipmap/search"
+                android:drawablePadding="4dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="4dp"
+                android:text="@string/searchshop"
+                android:textColor="@color/textlight"
+                android:textSize="@dimen/textlarge" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+</android.support.design.widget.AppBarLayout>

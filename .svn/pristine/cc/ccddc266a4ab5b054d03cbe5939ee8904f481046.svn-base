@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/layout_toolbar"></include>
+
+    <LinearLayout
+        android:id="@+id/linearFace"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/linearPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F6F4F5"
+            android:orientation="horizontal"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <ImageButton
+                android:id="@+id/chat_pic"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@mipmap/takephoto"
+                android:clickable="true"
+                android:scaleType="centerInside" />
+
+            <ImageButton
+                android:id="@+id/chat_album"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@mipmap/album"
+                android:clickable="true"
+                android:scaleType="centerInside" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearRight"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.ewgvip.buyer.android.layout.MyViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:id="@+id/linearFacePoint"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:background="#F6F4F5"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/school_list_linear_normal"
+                android:orientation="horizontal"
+                android:paddingTop="1dp">
+
+                <LinearLayout
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/school_comment_normal"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@mipmap/cutt_emoticon_weixiao" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearCancel"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/school_comment_normal"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@mipmap/cutt_emoticon_tab_backspace" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeMenu"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_above="@id/linearFace"
+        android:background="@drawable/school_list_linear_normal"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="0.7"
+                android:background="@drawable/button_rounded_white_frame"
+                android:gravity="center_vertical"
+                android:inputType="textMultiLine"
+                android:minHeight="32dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:textColorHint="@color/border"
+                android:textSize="14sp" />
+
+
+            <Button
+                android:id="@+id/tvSubmit"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/chat_send_button"
+                android:minHeight="30dp"
+                android:text="@string/send"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listViewMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeMenu"
+        android:layout_below="@id/top"
+        android:background="#F6F4F5"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:listSelector="#F6F4F5"
+        android:overScrollMode="never"></ListView>
+
+</RelativeLayout>

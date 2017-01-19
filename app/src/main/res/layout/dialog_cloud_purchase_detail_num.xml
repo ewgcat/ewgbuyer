@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/dialog_title"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="47.7dp"
+            android:gravity="center"
+            android:text="夺宝号码"
+            android:textColor="#5f5f5f"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="@color/divgray" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gview_dialog_cloud_purchase_detail_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="4"></GridView>
+
+    <LinearLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/dialog_bottom"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="@color/divgray" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="47.7dp"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="#5f5f5f"
+            android:textSize="17sp" />
+    </LinearLayout>
+</LinearLayout>
+

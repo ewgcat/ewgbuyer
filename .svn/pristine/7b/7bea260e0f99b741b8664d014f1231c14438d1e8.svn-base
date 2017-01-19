@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nav"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_alignParentBottom="true"
+    android:background="@color/divgray"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:paddingTop="0.3dp">
+
+    <RelativeLayout
+        android:id="@+id/navigation_index"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white">
+
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/index_img"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp" />
+
+        <TextView
+            android:id="@+id/index_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/index_img"
+            android:layout_centerHorizontal="true"
+            android:text="@string/index"
+            android:textColor="@color/textdark"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/navigation_sort"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white">
+
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sort_img"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp" />
+
+        <TextView
+            android:id="@+id/sort_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sort_img"
+            android:layout_centerHorizontal="true"
+            android:text="@string/sort"
+            android:textColor="@color/textdark"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/navigation_cart"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white">
+
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/cart_img"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp" />
+
+        <TextView
+            android:id="@+id/cart_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cart_img"
+            android:layout_centerHorizontal="true"
+            android:text="@string/cart"
+            android:textColor="@color/textdark"
+            android:textSize="13sp" />
+
+
+        <View
+            android:id="@+id/barge"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="8dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/navigation_brand"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white">
+
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/order_img"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp" />
+
+        <TextView
+            android:id="@+id/order_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/order_img"
+            android:layout_centerHorizontal="true"
+            android:text="订单"
+            android:textColor="@color/textdark"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/navigation_usercenter"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white">
+
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/usercenter_img"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginTop="6dp" />
+
+        <TextView
+            android:id="@+id/usercenter_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/usercenter_img"
+            android:layout_centerHorizontal="true"
+            android:text="@string/usercenter"
+            android:textColor="@color/textdark"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <ScrollView
+        android:id="@+id/sv_cloud_goods_detail_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_cloud_goods_detail_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                android:id="@+id/toolbar_layout"
+                layout="@layout/layout_toolbar" />
+
+            <RelativeLayout
+                android:id="@+id/rl_cloud_goods_show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/toolbar_layout"
+                android:background="@color/white">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/viewPager"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_dot_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="3dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/hint_gray" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_cloud_goods_sign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_cloud_goods_show"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tv_cloud_goods_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="张小泉 家用厨房大剪刀"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textmin" />
+
+                <TextView
+                    android:id="@+id/tv_cloud_goods_introduce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/tv_cloud_goods_name"
+                    android:layout_toRightOf="@id/tv_cloud_goods_name"
+                    android:text="优质不锈钢 厨房多用剪刀"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="@color/red"
+                    android:singleLine="true"
+                    android:textSize="@dimen/textmin" />
+
+                <TextView
+                    android:id="@+id/rl_cloud_goods_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/tv_cloud_goods_name"
+                    android:layout_below="@id/tv_cloud_goods_name"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="期号：01234567899876543210"
+                    android:textColor="@color/hint_gray"
+                    android:textSize="@dimen/textmin" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_cloud_goods_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_cloud_goods_sign"
+                android:layout_marginTop="16dp"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:id="@+id/rl_cloud_goods_status_during"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <ProgressBar
+                        android:id="@+id/pb_cloud_goods_all_count"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="16dp"
+                        android:max="100"
+                        android:progress="50"
+                        android:secondaryProgress="70" />
+
+                    <TextView
+                        android:id="@+id/tv_cloud_all_count_change_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/pb_cloud_goods_all_count"
+                        android:layout_below="@id/pb_cloud_goods_all_count"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/cloud_all_count_change_time" />
+
+                    <TextView
+                        android:id="@+id/tv_cloud_surplus_count_change_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@id/pb_cloud_goods_all_count"
+                        android:layout_alignTop="@id/tv_cloud_all_count_change_time"
+                        android:layout_below="@id/pb_cloud_goods_all_count"
+                        android:layout_marginRight="16dp"
+                        android:text="@string/cloud_surplus_count_change_time" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_cloud_goods_status_end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_cloud_goods_status_during"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/cloud_goods_detail_background">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/sv_acquire_user_show"
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="16dp"
+                        fresco:failureImage="@mipmap/ic_stub"
+                        fresco:failureImageScaleType="center"
+                        fresco:placeholderImage="@mipmap/ic_stub"
+                        fresco:placeholderImageScaleType="center"
+                        fresco:retryImage="@mipmap/ic_stub"
+                        fresco:retryImageScaleType="center" />
+
+                    <TextView
+                        android:id="@+id/tv_acquire_ursename_target"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/sv_acquire_user_show"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@id/sv_acquire_user_show"
+                        android:text="获奖者：" />
+
+                    <TextView
+                        android:id="@+id/tv_acquire_ursename_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/sv_acquire_user_show"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@id/tv_acquire_ursename_target"
+                        android:text="假酒害人啊"
+                        android:textColor="@color/blue" />
+
+                    <TextView
+                        android:id="@+id/tv_acquire_ursename_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/sv_acquire_user_show"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@id/tv_acquire_ursename_detail"
+                        android:text="（砍省铁岭）"
+                        android:singleLine="true"
+                        android:textColor="@color/green" />
+
+                    <TextView
+                        android:id="@+id/tv_acquire_urseid_target"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_acquire_ursename_target"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_toRightOf="@id/sv_acquire_user_show"
+                        android:text="用户ID：" />
+
+                    <TextView
+                        android:id="@+id/tv_acquire_urseid_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/tv_acquire_urseid_target"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_toRightOf="@id/tv_acquire_ursename_target"
+                        android:text="119119（唯一不变标识）"
+                        android:singleLine="true" />
+
+                    <TextView
+                        android:id="@+id/tv_acquire_urse_number_target"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_acquire_urseid_target"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_toRightOf="@id/sv_acquire_user_show"
+                        android:text="本次参与：" />
+
+                    <TextView
+                        android:id="@+id/tv_acquire_urse_number_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/tv_acquire_urse_number_target"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@id/tv_acquire_urse_number_target"
+                        android:text="11人次" />
+
+                    <TextView
+                        android:id="@+id/tv_acquire_urse_number_detail_go"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/tv_acquire_urse_number_target"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@id/tv_acquire_urse_number_detail"
+                        android:text="查看Ta的号码"
+                        android:textColor="@color/blue" />
+
+                    <TextView
+                        android:id="@+id/tv_acquire_urse_time_target"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_acquire_urse_number_target"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_toRightOf="@id/sv_acquire_user_show"
+                        android:text="揭晓时间：" />
+
+                    <TextView
+                        android:id="@+id/tv_acquire_urse_time_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/tv_acquire_urse_time_target"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_toRightOf="@id/tv_acquire_ursename_target"
+                        android:text="2016-02-17 10:41:03" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_luck_number_target"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_acquire_urse_time_target"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/cloud_goods_detail_background_red">
+
+                        <TextView
+                            android:id="@+id/tv_luck_number_target"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginLeft="24dp"
+                            android:layout_marginTop="16dp"
+                            android:text="幸运号码："
+                            android:textColor="@color/white"
+                            android:textSize="19sp" />
+
+                        <TextView
+                            android:id="@+id/tv_luck_number_detail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/tv_luck_number_target"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_toRightOf="@id/tv_luck_number_target"
+                            android:text="1101191"
+                            android:textColor="@color/white"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:id="@+id/tv_luck_number_math_detail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/tv_luck_number_target"
+                            android:layout_marginLeft="16dp"
+                            android:layout_toRightOf="@id/tv_luck_number_detail"
+                            android:background="@drawable/bg_cloud_goods_detail_show"
+                            android:paddingLeft="4dp"
+                            android:paddingRight="4dp"
+                            android:text="查看计算详情"
+                            android:singleLine="true"
+                            android:textColor="@color/red"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_cloud_goods_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_cloud_goods_status"
+                android:layout_marginTop="16dp"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/hint_gray" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_cloud_goods_detail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:text="图文详情"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/tv_cloud_goods_detail_sign"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/tv_cloud_goods_detail"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_toRightOf="@id/tv_cloud_goods_detail"
+                            android:text="（建议在wifi下查看）" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="16dp"
+                            android:src="@mipmap/coupons_next" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/hint_gray" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_cloud_goods_detail_before"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginTop="16dp"
+                            android:text="往期揭晓"
+                            android:textColor="@color/black" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="16dp"
+                            android:src="@mipmap/coupons_next" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/hint_gray" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_cloud_goods_detail_share"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginTop="16dp"
+                            android:text="晒单分享"
+                            android:textColor="@color/black" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="16dp"
+                            android:src="@mipmap/coupons_next" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/hint_gray" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_cloud_goods_before_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_cloud_goods_detail"
+                android:layout_marginTop="16dp"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:id="@+id/ll_cloud_goods_before_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/hint_gray" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_cloud_goods_before_detail_descript"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_cloud_goods_before_detail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginTop="16dp"
+                            android:text="所有参与记录"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tv_cloud_goods_before_detail_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginTop="16dp"
+                            android:text="( 自2016-02-17 09:31:29开始 )" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/hint_gray" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/ll_cloud_goods_before_detail"
+                    android:orientation="vertical">
+
+
+                    <com.ewgvip.buyer.android.pulltorefresh.PullToRefreshListView
+                        android:id="@+id/listview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:cacheColorHint="@color/white"
+                        android:divider="@color/divgray"
+                        android:dividerHeight="0.3dp"
+                        android:fadingEdge="none"
+                        android:fastScrollEnabled="false"
+                        android:footerDividersEnabled="false"
+                        android:headerDividersEnabled="false"
+                        android:scrollbars="vertical|none"
+                        android:smoothScrollbar="true">
+
+                    </com.ewgvip.buyer.android.pulltorefresh.PullToRefreshListView>
+
+                    <include
+                        android:id="@+id/nodata"
+                        layout="@layout/layout_nodata"></include>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_go_to_cloud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/b_go_to_cloud_hide"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/b_go_to_cloud"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_join_cloud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/b_join_cloud_hide"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/b_join_cloud"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</RelativeLayout>

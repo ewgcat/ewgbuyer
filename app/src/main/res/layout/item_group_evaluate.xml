@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="10dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_item_group_life"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            fresco:failureImage="@mipmap/ic_stub"
+            fresco:failureImageScaleType="fitXY"
+            fresco:placeholderImage="@mipmap/ic_stub"
+            fresco:placeholderImageScaleType="fitXY"
+            fresco:retryImage="@mipmap/ic_stub"
+            fresco:retryImageScaleType="fitXY"
+            fresco:roundAsCircle="true" />
+
+        <TextView
+            android:id="@+id/tv_item_group_evaluate_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/iv_item_group_life"
+            android:gravity="center_vertical"
+            android:text="DVP314283917"
+            android:textColor="#333333"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_item_group_evaluate_date"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:text="2015-11-04"
+            android:textColor="#979797"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_item_group_evaluate_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:text="111464876a4sda"
+        android:textColor="#333333"
+        android:textSize="13sp" />
+</LinearLayout>

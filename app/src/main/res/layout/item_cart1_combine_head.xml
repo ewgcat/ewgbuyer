@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mylist_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <View
+        android:id="@+id/check_area"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        style="@style/RoundCheckboxTheme"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:clickable="false" />
+
+    <TextView
+        android:id="@+id/goods_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@id/checkBox"
+        android:gravity="center"
+        android:textColor="@color/red"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:id="@+id/layout_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/goods_money">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:text="@string/combine_count"
+            android:textColor="@color/textdark"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/minus"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/textView3"
+            android:background="@drawable/frame_grey"
+            android:contentDescription="@string/img"
+            android:scaleType="centerInside"
+            android:src="@mipmap/minus" />
+
+        <EditText
+            android:id="@+id/buy_count"
+            android:layout_width="64dp"
+            android:layout_height="32dp"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/minus"
+            android:background="@drawable/frame_grey"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="8"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/plus"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/buy_count"
+            android:background="@drawable/frame_grey"
+            android:contentDescription="@string/img"
+            android:scaleType="centerInside"
+            android:src="@mipmap/plus" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

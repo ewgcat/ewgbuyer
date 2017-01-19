@@ -1,0 +1,236 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/light_gray"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height"
+            android:background="@color/toolbar_color"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </RelativeLayout>
+    <!--<include layout="@layout/layout_toolbar"></include>-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@color/white"
+                android:paddingBottom="8dp">
+
+                <TextView
+                    android:id="@+id/orderStatus_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/orderStatus"
+                    android:textColor="@color/textdark" />
+
+                <TextView
+                    android:id="@+id/orderStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/orderStatus_tag"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/orderStatus_tag"
+                    android:textColor="@color/red" />
+
+                <TextView
+                    android:id="@+id/orderNumber_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/orderStatus_tag"
+                    android:layout_below="@id/orderStatus_tag"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/orderNumber"
+                    android:textColor="@color/textdark" />
+
+                <TextView
+                    android:id="@+id/orderNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/orderNumber_tag"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/orderNumber_tag"
+                    android:textColor="@color/textdark" />
+
+                <TextView
+                    android:id="@+id/order_integral"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/orderStatus_tag"
+                    android:layout_below="@id/orderNumber_tag"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/textdark" />
+
+                <TextView
+                    android:id="@+id/order_trans_fee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/orderStatus_tag"
+                    android:layout_below="@id/order_integral"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/textdark" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/rounded_red"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/divgray"
+                />
+            <LinearLayout
+                android:id="@+id/order_search_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"></LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/recieverInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/bg_pink"
+                android:paddingBottom="16dp">
+
+                <TextView
+                    android:id="@+id/mobilePhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginTop="16dp"
+                    android:drawableLeft="@mipmap/address_phone"
+                    android:maxLength="11"
+                    android:textColor="@color/textdark" />
+
+                <TextView
+                    android:id="@+id/receiver"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_toLeftOf="@id/mobilePhone"
+                    android:drawableLeft="@mipmap/address_name"
+                    android:textColor="@color/textdark" />
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/receiver"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginTop="8dp"
+                    android:maxLines="3"
+                    android:textColor="@color/textdark" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@mipmap/colorline"
+                />
+
+            <LinearLayout
+                android:id="@+id/express"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="8dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/express_company_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/textdark" />
+
+                <TextView
+                    android:id="@+id/shipCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/textdark" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/white"
+                    android:text="@string/paymentMethods"
+                    android:textColor="@color/textdark" />
+
+                <TextView
+                    android:id="@+id/paymentMethods"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/white"
+                    android:text="@string/free_evaluate"
+                    android:textColor="@color/textdark" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

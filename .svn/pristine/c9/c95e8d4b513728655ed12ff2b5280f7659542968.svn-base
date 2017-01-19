@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="status_bar_color">#000000</color>
+    <color name="toolbar_color">#db4437</color>
+
+    <!-- button样式颜色   -->
+    <color name="button_red">#f15353</color>
+    <color name="button_red_pressed">#b91919</color>
+    <color name="button_white_pressed">#eeeeee</color>
+    <color name="button_disabled">#d7d7d7</color>
+    <color name="button_red_text">#ffffff</color>
+    <color name="button_white_text">#636363</color>
+    <color name="button_red_pressed_text">#dcdcdc</color>
+    <color name="button_white_pressed_text">#636363</color>
+    <color name="button_disabled_text">#9a9a9a</color>
+
+    <color name="frame_gray">#888888</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="light_white">#fcc3c3</color>
+    <color name="white_transparent">#80FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#EBEBEB</color>
+    <color name="gray_">#cccccc</color>
+    <color name="dark_red">#C21B28</color>
+    <color name="light_yellow">#FCA643</color>
+    <color name="red">#f15353</color>
+    <color name="red_text">#db222e</color>
+    <color name="blue">#0000aa</color>
+    <color name="notselected">#404040</color>
+    <color name="selected">#323232</color>
+    <color name="dark_gray">#8a8a8a</color>
+    <color name="dark_gray_border">#80000000</color>
+    <color name="gray_guanzhu">#b0b0b0</color>
+    <color name="light_gray">#F5F5F5</color>
+    <color name="light_black">#cc000000</color>
+    <color name="lightblack">#97000000</color>
+    <color name="gray_sharp">#888888</color>
+    <color name="green">#4CD964</color>
+    <color name="light_red">#ffff6845</color>
+    <color name="hint_gray">#ff999999</color>
+    <color name="yellow">#FFFFFF00</color>
+    <color name="translucent_background">#5c000000</color>
+    <color name="deep_gray">#ff666666</color>
+    <color name="gray_white">#ffececec</color>
+    <color name="divgray">#CECECE</color>
+    <color name="nul">#00000000</color>
+    <color name="brandtop">#ebebeb</color>
+    <color name="textdark">#3d3d3d</color>
+    <color name="textgrey">#5b5b5b</color>
+    <color name="textyellow">#ff6600</color>
+    <color name="textlight">#666666</color>
+    <color name="textlight_group_left">#333333</color>
+    <color name="textlight_group_right">#7a7a7a</color>
+    <color name="textltip">#a6a6a6</color>
+    <color name="nogroup">#F9F9F9</color>
+    <color name="group">#F3F3F3</color>
+    <color name="div">#DDDDDD</color>
+    <color name="orange">#FF6600</color>
+    <color name="orange_balance">#f16a26</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="second_background">#F2F2F2</color>
+    <color name="third_background">#DCDCDC</color>
+    <color name="bgcolor">#ffffff</color>
+    <color name="toolbar">#22292c</color>
+    <color name="nav_text">#f86300</color>
+    <color name="bg_pink">#fffbf3</color>
+
+    <!-- 上传图片添加的颜色 -->
+    <color name="none_color">#00000000</color>
+    <color name="plugin_camera_black">#000000</color>
+    <color name="albumback">#E1E0DE</color>
+    <color name="linearBottom">#C0C0C0</color>
+    <color name="text">#6D6D6D</color>
+    <color name="border">#d0d0d0</color>
+    <color name="textlightgray">#989898</color>
+    <color name="textdarkgray">#4c4c4c</color>
+    <color name="backgroundgray">#eaeaea</color>
+    <color name="textnormalgray">#666666</color>
+    <color name="cart_login">#FFFCEE</color>
+    <color name="chat_pink_normal">#ff8c8c</color>
+    <color name="chat_pink_press">#ff4d4d</color>
+    <color name="lighter_gray">#f0f0f0</color>
+    <color name="gray_dark">#505050</color>
+    <color name="gray_darker">#545454</color>
+    <color name="red_price">#f54b48</color>
+    <!-- ui配色 -->
+    <color name="tv_coupon_amount">#5fbaf5</color>
+    <color name="lv_coupon">#fbb0ae</color>
+    <color name="signintegral">#949494</color>
+    <color name="integral_plus">#ef5151</color>
+    <color name="integral_minus">#5f5f5f</color>
+    <color name="sign_integral_right_now">#ffffff</color>
+    <color name="get_coupon_success_textview">#5b5d61</color>
+    <color name="get_coupon_success_view">#e0e0e0</color>
+    <color name="get_coupon_success_detail_color">#c2c2c2</color>
+    <color name="get_coupon_success_go">#555555</color>
+    <color name="get_coupon_success_buy">#87889c</color>
+    <color name="get_coupon_success_item_name">#252525</color>
+    <color name="get_coupon_success_item_price">#f04242</color>
+    <color name="user_integral_name">#333333</color>
+    <color name="user_integral_price">#5d5d5d</color>
+    <color name="foot_point_title_day">#a2a2a2</color>
+    <color name="foot_point_title_all">#d1d1d1</color>
+    <color name="user_center_information">#919191</color>
+    <color name="user_order_address">#979797</color>
+    <color name="express_address_background">#f8f8f8</color>
+    <color name="express_address_detail">#525252</color>
+    <color name="express_address_button">#565656</color>
+    <color name="user_center_information_change">#ececec</color>
+    <color name="cancel_color">#fbb0ae</color>
+    <color name="integral_index">#c7c7c7</color>
+    <color name="integral_index_select">#898989</color>
+    <color name="integral_index_background">#fdf8f5</color>
+    <color name="time_text">#cdcdcd</color>
+    <color name="consult_title">#414141</color>
+    <color name="consult_detail">#969595</color>
+    <color name="complain_detail_select_theme">#969595</color>
+    <color name="complain_detail_back_ground">#e4e4e4</color>
+    <color name="complain_picture_text_color">#f05454</color>
+    <color name="complain_status_text_color">#707070</color>
+    <color name="complain_time_text_color">#b7b7b7</color>
+    <color name="complain_conversation_username">#515151</color>
+    <color name="complain_conversation_time">#adadad</color>
+    <color name="complain_conversation_datail">#818181</color>
+    <color name="complain_conversation_seller">#f95353</color>
+    <color name="listview_deliver_color">#e5e5e5</color>
+    <color name="integral_title_detail">#b3b3b3</color>
+    <color name="integral_time_detail">#686868</color>
+    <color name="integral_background">#55ff0000</color>
+    <!--查看评价界面颜色-->
+    <color name="evaluate_bg_white">#ffffff</color>
+    <color name="evaluate_list_bg_gray">#f5f5f5</color>
+    <color name="evaluate_line_gray">#eeeeee</color>
+    <color name="evaluate_solid_line_gray">#e1e1e1</color>
+    <color name="evaluate_tv_date_gray">#7c7c7c</color>
+    <color name="evaluate_tv_white">#2c2c2c</color>
+    <color name="evaluate_tv_content_head_gray">#a5a5a5</color>
+    <!--订单评价界面颜色-->
+    <color name="order_evaluate_white">#ffffff</color>
+    <color name="order_evaluate_name_gray">#494949</color>
+    <color name="order_evaluate_price_red">#f15353</color>
+    <color name="order_evaluate_et_hint_gray">#9d9d9d</color>
+    <color name="order_evaluate_evaluate_gray">#545454</color>
+    <!--优惠券界面颜色-->
+    <color name="coupons_gray">#e2e2e2</color>
+    <color name="coupons_blue">#45abe8</color>
+    <color name="coupons_name_gray">#4e4e4e</color>
+    <color name="coupons_line_gray">#e1e1e1</color>
+    <color name="coupons_date_gray">#6b6b6b</color>
+    <color name="coupons_more_gray">#5f5f5f</color>
+    <!--零元购页面颜色-->
+    <color name="zero_use_txt_gray">#4f4f4f</color>
+    <color name="zero_use_txt_red">#f15353</color>
+    <color name="zero_use_line_gray">#e2e2e2</color>
+    <!--地址管理-->
+    <color name="address_txt_gray">#939393</color>
+    <color name="address_et_gray">#313131</color>
+    <color name="address_et_hint_gray">#cdcdcd</color>
+    <color name="address_name">#313131</color>
+    <color name="address_address">#797979</color>
+    <color name="address_edit">#909090</color>
+    <!--商品规格dialog-->
+    <color name="dialog_price">#d91d20</color>
+    <color name="dialog_tv">#2c2c2c</color>
+    <color name="dialog_bg">#f5f5f5</color>
+    <color name="dialog_txt">#cdcdcd</color>
+    <color name="divider_line">#e7e7e7</color>
+
+
+    <color name="group_shopping_transport">#eef0f0f0</color>
+    <color name="group_shopping_sale">#a1a1a1</color>
+    <color name="group_shopping_line_gray">#e3e3e3</color>
+    <color name="group_life_background">#80000000</color>
+    <color name="group_life_rmb_red">#f15353</color>
+    <color name="group_life_price_red">#f95353</color>
+    <color name="group_life_price_gray">#cfcfcf</color>
+    <color name="group_life_return">#8cce3a</color>
+    <color name="group_life_sale_num">#909090</color>
+
+    <color name="transparent_background">#66000000</color>
+
+    <!--云购文字颜色-->
+    <color name="cloud_text_grey">#ababab</color>
+    <color name="cloud_text_g">#ababab</color>
+    <color name="cloud_line_g">#c6c6c6</color>
+    <color name="cloud_text_blue">#2468b0</color>
+    <color name="cloud_text_blue_past">#4270be</color>
+    <color name="cloud_text_red_past">#ff4334</color>
+    <color name="bg_teal">#009688</color>
+    <color name="bg_teal_light">#B2DFDB</color>
+    <color name="bg_purple">#673AB7</color>
+    <color name="bg_white">#ffffff</color>
+    <color name="bg_yellow">#FFC107</color>
+
+</resources>

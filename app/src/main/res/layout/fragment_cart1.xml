@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <include
+        android:id="@+id/car_top"
+        layout="@layout/layout_cart1_toolbar"></include>
+
+
+    <LinearLayout
+        android:id="@+id/login_header"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/car_top"
+        android:background="@color/cart_login"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/cart_top_login"
+            android:layout_width="80dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/frame_rounded_white"
+            android:text="@string/login"
+            android:textColor="@color/textlight" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="16dp"
+            android:text="@string/cart_tip"
+            android:textColor="@color/textlight" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/car_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/light_black"
+        android:visibility="gone">
+
+
+        <RelativeLayout
+            android:id="@+id/check_area"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/checkBoxAll"
+                style="@style/RoundCheckboxTheme"
+                android:layout_width="24dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:clickable="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@id/checkBoxAll"
+                android:text="@string/select_all"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/check_area"
+            android:visibility="gone">
+
+
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/toolbar_color"
+                android:gravity="center"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:text="@string/delete"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_submint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/check_area"
+            android:paddingLeft="16dp">
+
+            <TextView
+                android:id="@+id/total_price_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/amountOfGoods2"
+                android:textColor="@color/white" />
+
+
+            <Button
+                android:id="@+id/checkout"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/toolbar_color"
+                android:gravity="center"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/total_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/checkout"
+                android:layout_toRightOf="@id/total_price_tag"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.ewgvip.buyer.android.pulltorefresh.PullToRefreshListView
+        android:id="@+id/car_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/car_bottom"
+        android:layout_below="@id/login_header"
+        android:background="@color/white"
+        android:divider="@drawable/divider_for_car1"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:scrollbars="vertical"
+        android:smoothScrollbar="true"></com.ewgvip.buyer.android.pulltorefresh.PullToRefreshListView>
+
+    <LinearLayout
+        android:id="@+id/cartempty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/login_header"
+        android:background="@color/light_gray"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="96dp"
+            android:src="@mipmap/nothing" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/cartempty"
+            android:textColor="@color/textdark"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/gotoindex"
+            style="@style/button_white"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/gotoindex"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

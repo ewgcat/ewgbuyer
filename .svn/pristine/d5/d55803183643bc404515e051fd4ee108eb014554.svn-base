@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/layout_toolbar" />
+    <TextView
+        android:id="@+id/noaddress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top"
+        android:gravity="center"
+        android:text="@string/noReciever"
+        android:textColor="@color/textdark"
+        android:visibility="gone" />
+    <Button
+        android:id="@+id/btn_fragment_address_list_new"
+        style="@style/button_red"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:text="@string/newAddress"
+        android:textColor="@color/white" />
+
+    <ListView
+        android:id="@+id/lview_fragment_address_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_fragment_address_list_new"
+        android:layout_below="@+id/top"
+        android:divider="@color/divider_line"
+        android:dividerHeight="0.5dp"></ListView>
+
+</RelativeLayout>

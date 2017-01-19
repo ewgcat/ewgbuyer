@@ -1,0 +1,21 @@
+package com.ewgvip.buyer.android;
+
+import android.app.Application;
+
+import com.facebook.drawee.backends.pipeline.Fresco;
+import com.tencent.bugly.crashreport.CrashReport;
+
+/**
+ * Author: lixiaoyang
+ * Date: 12/31/15 09:42
+ * Description:  项目application,只负责初始化
+ */
+public class MyApplication extends Application {
+
+    public void onCreate() {
+        Fresco.initialize(getApplicationContext());
+        CrashReport.initCrashReport(getApplicationContext(), "02c6f41f69", false);
+        super.onCreate();
+
+    }
+}

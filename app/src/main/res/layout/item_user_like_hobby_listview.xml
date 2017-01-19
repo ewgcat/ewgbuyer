@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="136dp"
+    android:background="@color/bgcolor">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_goods_icon"
+        android:layout_width="104dp"
+        android:layout_height="104dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        fresco:failureImage="@mipmap/ic_stub"
+        fresco:failureImageScaleType="center"
+        fresco:placeholderImage="@mipmap/ic_stub"
+        fresco:placeholderImageScaleType="center"
+        fresco:retryImage="@mipmap/ic_stub"
+        fresco:retryImageScaleType="center" />
+
+    <TextView
+        android:id="@+id/tv_goods_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_goods_icon"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/iv_goods_icon"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="name"
+        android:textColor="#333333"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_goods_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_goods_icon"
+        android:layout_alignLeft="@id/tv_goods_name"
+        android:textColor="#f15353"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_same_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_goods_price"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/foot_point_textview"
+        android:text="@string/findSameGoods"
+        android:textColor="@color/textdark"
+        android:textSize="@dimen/textsmall"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_goods_price"
+        android:layout_marginRight="16dp"
+        android:layout_toLeftOf="@id/tv_same_like"
+        android:background="@drawable/foot_point_textview"
+        android:text="@string/deleteGoods"
+        android:textColor="@color/textdark"
+        android:textSize="@dimen/textsmall"
+        android:visibility="invisible" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/gray" />
+
+</RelativeLayout>

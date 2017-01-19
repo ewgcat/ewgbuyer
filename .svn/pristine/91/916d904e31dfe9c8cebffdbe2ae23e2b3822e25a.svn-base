@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/toolbar_color"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/nav_arrow"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="VIP会员中心"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_gray"
+            android:orientation="vertical"
+            android:paddingBottom="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="217dp"
+                android:background="@mipmap/vipuserbg"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/user_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+
+                    <!--<com.facebook.drawee.view.SimpleDraweeView-->
+                        <!--android:id="@+id/vip_user_img"-->
+                        <!--android:layout_width="80dp"-->
+                        <!--android:layout_height="80dp"-->
+                        <!--android:layout_marginTop="20dp"-->
+                        <!--fresco:failureImage="@mipmap/ic_stub"-->
+                        <!--fresco:failureImageScaleType="center"-->
+                        <!--fresco:placeholderImage="@mipmap/ic_stub"-->
+                        <!--fresco:placeholderImageScaleType="center"-->
+                        <!--fresco:retryImage="@mipmap/ic_stub"-->
+                        <!--fresco:retryImageScaleType="center"-->
+                        <!--fresco:roundAsCircle="true" />-->
+                    <ImageView
+                        android:id="@+id/vip_user_img"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="20dp"/>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_vip_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp" />
+
+                <TextView
+                    android:id="@+id/tv_vip_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="8dp"
+                    android:background="#44000000"
+                    android:orientation="horizontal">
+
+                    <!--团队人数-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_vip_team_count"
+                            android:layout_width="match_parent"
+                            android:layout_height="24dp"
+                            android:gravity="center"
+
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textmin" />
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="24dp"
+                            android:gravity="center"
+                            android:text="团队人数"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textmin" />
+
+                    </LinearLayout>
+
+                    <!--升级奖励-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_vip_upgrade_bonus"
+                            android:layout_width="match_parent"
+                            android:layout_height="24dp"
+                            android:gravity="center"
+
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textmin" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="24dp"
+                            android:gravity="center"
+                            android:text="升级奖励"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textmin" />
+                    </LinearLayout>
+
+                    <!-- 返佣收益 -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_vip_reward_yue"
+                            android:layout_width="match_parent"
+                            android:layout_height="24dp"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textmin" />
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="24dp"
+                            android:gravity="center"
+                            android:text="返佣收益"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textmin" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/divider_vertical"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_my_spread"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:text="我的推广"
+                        android:textColor="@color/textdark"
+                        android:textSize="@dimen/textlarge" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16dp"
+                        android:drawableRight="@mipmap/arrow"
+                        android:gravity="center"
+                        android:text="邀请码与二维码"
+                        android:textColor="@color/textltip"
+                        android:textSize="@dimen/textsmall" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_vip_level_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:text="VIP升级"
+                        android:textColor="@color/textdark"
+                        android:textSize="@dimen/textlarge" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16dp"
+                        android:drawableRight="@mipmap/arrow"
+                        android:gravity="center"
+                        android:text="更高等级更多优惠"
+                        android:textColor="@color/textltip"
+                        android:textSize="@dimen/textsmall" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_my_vip_leader"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:text="我的上级"
+                        android:textColor="@color/textdark"
+                        android:textSize="@dimen/textlarge" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16dp"
+                        android:drawableRight="@mipmap/arrow"
+                        android:gravity="center"
+                        android:text="查看上级信息"
+                        android:textColor="@color/textltip"
+                        android:textSize="@dimen/textsmall" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_reward_manage"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:text="奖励管理"
+                        android:textColor="@color/textdark"
+                        android:textSize="@dimen/textlarge" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16dp"
+                        android:drawableRight="@mipmap/arrow"
+                        android:gravity="center"
+                        android:text="领取和查看下级升级奖励"
+                        android:textColor="@color/textltip"
+                        android:textSize="@dimen/textsmall" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_team_manage"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:text="团队管理"
+                        android:textColor="@color/textdark"
+                        android:textSize="@dimen/textlarge" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16dp"
+                        android:drawableRight="@mipmap/arrow"
+                        android:gravity="center"
+                        android:text="梦想e+,激情e+,疯狂e+"
+                        android:textColor="@color/textltip"
+                        android:textSize="@dimen/textsmall" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_child_buy_goods_reward"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:text="返佣收益"
+                        android:textColor="@color/textdark"
+                        android:textSize="@dimen/textlarge" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16dp"
+                        android:drawableRight="@mipmap/arrow"
+                        android:gravity="center"
+                        android:text="下级购买商品可得到返佣"
+                        android:textColor="@color/textltip"
+                        android:textSize="@dimen/textsmall" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_my_post"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:text="我的海报"
+                        android:textColor="@color/textdark"
+                        android:textSize="@dimen/textlarge" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16dp"
+                        android:drawableRight="@mipmap/arrow"
+                        android:gravity="center"
+                        android:text="带个人二维码的精美海报图"
+                        android:textColor="@color/textltip"
+                        android:textSize="@dimen/textsmall" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_auth_license"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:text="授权书"
+                        android:textColor="@color/textdark"
+                        android:textSize="@dimen/textlarge" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16dp"
+                        android:drawableRight="@mipmap/arrow"
+                        android:gravity="center"
+                        android:text="平台向用户发的授权书"
+                        android:textColor="@color/textltip"
+                        android:textSize="@dimen/textsmall" />
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

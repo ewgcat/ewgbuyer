@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rl_height"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+       >
+        <TextView
+            android:id="@+id/tv_combinename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="优惠套装"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/textsmall"
+            />
+        <TextView
+            android:id="@+id/tv_combine_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/red"
+            android:layout_toRightOf="@+id/tv_combinename"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone"
+            android:textSize="@dimen/textsmall"
+            />
+        <TextView
+            android:id="@+id/tv_total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:textColor="@color/textgrey"
+            android:layout_toRightOf="@+id/tv_combine_total"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone"
+            android:textSize="@dimen/textsmall"
+            />
+        <ImageView
+            android:id="@+id/iv_combine_details"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:src="@mipmap/combine_select"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lv_list_combine"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_centerVertical="true"
+        android:background="@color/white"
+        android:scrollbars="none" />
+
+       <LinearLayout
+        android:id="@+id/ll_combine_item_one"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+           android:background="@color/white"
+        android:orientation="vertical">
+
+        </LinearLayout>
+
+</LinearLayout>

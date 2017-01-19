@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/trans_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="3dp" >
+
+    <View
+        android:id="@+id/div"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divgray" />
+
+    <TextView
+        android:id="@+id/transID_tag"
+        style="@style/textlight"
+        android:layout_marginTop="5dp"
+        android:text="@string/transID" />
+
+    <TextView
+        android:id="@+id/transID"
+        style="@style/textlight"
+        android:layout_alignBaseline="@id/transID_tag"
+        android:layout_toRightOf="@id/transID_tag" />
+
+    <TextView
+        android:id="@+id/transSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/transID_tag"
+        android:layout_alignParentRight="true"
+        android:text="@string/logistics"
+        android:textColor="@color/red" />
+
+    <TextView
+        android:id="@+id/transCompany_tag"
+        style="@style/textlight"
+        android:layout_alignLeft="@+id/transID_tag"
+        android:layout_below="@+id/transID_tag"
+        android:layout_marginTop="10dp"
+        android:text="@string/transCompany" />
+
+    <TextView
+        android:id="@+id/transCompany"
+        style="@style/textlight"
+        android:layout_alignBaseline="@id/transCompany_tag"
+        android:layout_toRightOf="@id/transCompany_tag" />
+
+    <TextView
+        android:id="@+id/transTime_tag"
+        style="@style/textlight"
+        android:layout_alignLeft="@+id/transCompany_tag"
+        android:layout_below="@+id/transCompany_tag"
+        android:layout_marginTop="10dp"
+        android:text="@string/transTime" />
+
+    <TextView
+        android:id="@+id/transTime"
+        style="@style/textlight"
+        android:layout_alignBaseline="@id/transTime_tag"
+        android:layout_toRightOf="@id/transTime_tag" />
+
+</RelativeLayout>

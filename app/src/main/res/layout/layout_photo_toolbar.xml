@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/toolbar_color"
+    android:theme="@style/AppTheme.AppBarOverlay">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/toolbar_color">
+
+        <RelativeLayout
+            android:id="@+id/layout_order_evaluate_photo_back"
+            android:layout_width="@dimen/toolbar_height"
+            android:layout_height="@dimen/toolbar_height">
+
+            <TextView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/nav_arrow"></TextView>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/layout_order_evaluate_photo_back"
+            android:gravity="center"
+            android:text="图片"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/btn_order_evaluate_photo_complete"
+            style="@style/top_right"
+            android:text="@string/order_evaluate_complete" />
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.AppBarLayout>

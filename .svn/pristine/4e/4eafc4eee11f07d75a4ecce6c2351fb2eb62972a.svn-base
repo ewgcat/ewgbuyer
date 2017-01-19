@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="D:\ewgbuyer\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_08ba8e84476d9dd6d3a8dd7c55e184f91d8bd155\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.9.0\f824591a0016efbaeddb8300bee54832a1398cfa\okio-1.9.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\10\okio-1.9.0_db0545b090bbd931e1cf6e43202e038727277a7d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\ewgbuyer\app\build\intermediates\exploded-aar\com.tencent.bugly\crashreport\2.3.6\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c8eebe2b083a65d16f332110a0d59159513033fb">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.tencent.bugly-crashreport-2.3.6_d2ac4b96d2ead47e5196a4892989d7e1358a540a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\adapter-rxjava\2.0.0-beta4\bd49baf667542c7d06f71e598bdee7fe57272013\adapter-rxjava-2.0.0-beta4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bd49baf667542c7d06f71e598bdee7fe57272013">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\10\adapter-rxjava-2.0.0-beta4_e23037635433fe189e1b58909ce389aa7d3d465e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\ewgbuyer\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f83b00041ecfba705603fec40363416c7de69719">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_dab36340768f8a6dd512c42c0a9f210323968be2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\retrofit\2.0.0-beta4\739e00dea1f0ac04fdb9b6160d667e23cc50a791\retrofit-2.0.0-beta4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="739e00dea1f0ac04fdb9b6160d667e23cc50a791">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\10\retrofit-2.0.0-beta4_ff5e801f6eef544a1408f5132c8f2c7b6c1a5980\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\ewgbuyer\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-base\0.14.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b881010e06dc39be15b7465cd16492eedbab246f">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.facebook.fresco-imagepipeline-base-0.14.1_c6ace155a97a36010276da912e2e4a71e1080433\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\ewgbuyer\app\libs\alipaySdk-20160825.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="08cfc3ced256c0e40853f35882c6bd23a191b416">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\2\alipaySdk-20160825_364013781a7364d47432bfb034d50473ea169ab8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\ewgbuyer\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.0.1_1a7657d8fed8a6185d9ce540cbde12f5c3ce42d1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\ewgbuyer\app\libs\core.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="96b67e377ff4637ff1fa3bbe9ad7183773935f39">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\2\core_0da52355319410f70b8e11d6758f7a27b8c98000\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.4.1\c7c4f9e35c2fd5900da24f9872e3971801f08ce0\okhttp-3.4.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-3.4.1_a3a718343956c6e4d917a53a4fdd4a4dc134cda5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\10\bolts-tasks-1.4.0_c64325f78a24c085b700c554244dc03fa6bc6a89\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\ewgbuyer\app\libs\open_sdk_r5756.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7f7bf100e53d9099032f113728725e1843e1fbe2">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\2\open_sdk_r5756_093029ddb76399143f6102551605d41990619bff\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\ewgbuyer\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.0.1_06df47be9f75016c7e2c30f77eaffe58d9dd2037\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\ewgbuyer\app\build\intermediates\exploded-aar\com.bigkoo\convenientbanner\2.0.5\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b99798f653c15a17af6779bb9f01a66f2ee6e6ef">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.bigkoo-convenientbanner-2.0.5_7c990389acf7e54f925aff511b895e076815a182\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\logging-interceptor\3.4.1\381fc1096ba65040d8e80ea43b2e1d9bad02345e\logging-interceptor-3.4.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="381fc1096ba65040d8e80ea43b2e1d9bad02345e">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\10\logging-interceptor-3.4.1_16ea2c5adabd180da0b0709521ed490e4e49b95b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\ewgbuyer\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_e995dbc6e6efd1b09df66834c13f78683b2667b6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\ewgbuyer\app\build\intermediates\exploded-aar\com.facebook.fresco\fresco\0.14.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c77602d43223db798b1ca56cf307ab0ee3c0e63f">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.facebook.fresco-fresco-0.14.1_66a627a92f513693ab76dd7ef3d19ba3b2ada36c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\ewgbuyer\app\libs\AMap_Location_v1.4.1_20150917.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="07008f2806e509a55706771629c8767998b6fb98">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\2\AMap_Location_v1.4.1_20150917_e0602e0c9df0c9329a1cb90959277c40ed09e2fd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\ewgbuyer\app\build\intermediates\exploded-aar\com.yqritc\recyclerview-flexibledivider\1.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="de2a8ef4f859178c128c931b0f5ce0fe31919670">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.yqritc-recyclerview-flexibledivider-1.4.0_c8832bf218c0a61544a57f1f2ef4d50fb03664ac\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\ewgbuyer\app\build\intermediates\exploded-aar\com.facebook.fresco\drawee\0.14.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="cf5e2940501f8f7b9175df6491cebb84f5690f14">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.facebook.fresco-drawee-0.14.1_c72fb65b499882f66246be3cf6feb10003500864\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\ewgbuyer\app\build\intermediates\exploded-aar\com.github.bumptech.glide\okhttp3-integration\1.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="07a1832fdb6b44c0f4ec761ac3de02bfd3508269">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.bumptech.glide-okhttp3-integration-1.4.0_c60516ea73e0c88df07a132dd52804fddfd6f35f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\converter-gson\2.0.0-beta4\de5935a367ba5e343e9df786ac8fc0c7d52b5f0c\converter-gson-2.0.0-beta4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="de5935a367ba5e343e9df786ac8fc0c7d52b5f0c">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\10\converter-gson-2.0.0-beta4_c6e97f806b29334717938c473af852cff524d6ae\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.7\751f548c85fa49f330cecbb1875893f971b33c4e\gson-2.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.7_2e85dbf641c4a16c73925139bd4ff50ebb0450dd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\ewgbuyer\app\libs\AMap_Services_V2.7.0_20151125.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7eac53aff3958c7447c434fe376c8c978a2f9c5c">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\2\AMap_Services_V2.7.0_20151125_b009543a706d7461cd0b1a24dd55f9b0864a6800\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\ewgbuyer\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.0.1_f72a123037582b9cd94b48a344c43913085d19a7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\converter-scalars\2.0.0-beta4\f8685e25bc7f076913e2b51996cbc19ef7eb05df\converter-scalars-2.0.0-beta4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f8685e25bc7f076913e2b51996cbc19ef7eb05df">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\10\converter-scalars-2.0.0-beta4_d3bf78665671ef84fc4525b60f696e8a7fbb4d6a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\3.7.0\9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4\glide-3.7.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\10\glide-3.7.0_1f3ddf859a86296da03fddcf50d19f29d652df81\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\ewgbuyer\app\build\intermediates\exploded-aar\com.android.support\design\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3b236883e0df6002cabb01ce57d00a5b1e5de610">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-25.0.1_d16a90fc3163f651cc5b08e185396974939c6cef\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\ewgbuyer\app\libs\UPPayAssistEx.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d63c415d9b8c8d48677fe2253b21180ccc1afa0f">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\2\UPPayAssistEx_40732d1b7ffaef39b07a27da55b735c89bfdc5e3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\io.reactivex\rxjava\1.2.1\4e4cfa4adc74521d5966799fa5ab70b733552f68\rxjava-1.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4e4cfa4adc74521d5966799fa5ab70b733552f68">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\10\rxjava-1.2.1_aa891a92fd7005674dbfb16a988b401dae763c6b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\ewgbuyer\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.0.1_d4d7aac67e0b894689a41bbc5f034200e5bed8e6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.0.1\support-annotations-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.0.1_16b927aa0dd2b2321d15d940863d62ef4fef4cda\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife-annotations\8.4.0\ea392375cf9ff59234a82e7928a204215ccc98cd\butterknife-annotations-8.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ea392375cf9ff59234a82e7928a204215ccc98cd">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\10\butterknife-annotations-8.4.0_a2a255623276bf6fd1b525dcb3e3c692cac62c3e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\ewgbuyer\app\libs\AMap_android_API_2DMap_Lib_V2.7.0_20151124.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4165e2d2b127e12033f894513bb85fe4ac66c610">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\2\AMap_android_API_2DMap_Lib_V2.7.0_20151124_e92cefe4d9dcd407f5d5e4229c3c2c900e1145de\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\ewgbuyer\app\build\intermediates\exploded-aar\com.android.support\transition\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c1b6ab157e8e12cb08b9ee82bb5e3c5d22632eb3">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-transition-25.0.1_fea825b39d3a1749839a96dd144bd949a887f698\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\ewgbuyer\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_4ecc25d29da280e95628ee2accf70201d2311689\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\ewgbuyer\app\build\intermediates\exploded-aar\com.facebook.fresco\fbcore\0.14.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e5bf70f3683146e4875c006624543cb0a13eac91">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.facebook.fresco-fbcore-0.14.1_03e9a9a71d312d2b2df18f5302bf433f83154a0f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\ewgbuyer\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.0.1_fbd0ff1ec5d25abcf804f0cf71b3ccad68d065d9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\ewgbuyer\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6b65be253a06ff94059cc043e7951dd943c22f2e">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_6cd0495551e0a4d9764d2efb5573245dd94b02d6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\ewgbuyer\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.0.1_7d496e9d64888dceb9e63b935205adb58e52df5f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\ewgbuyer\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.0.1_be12b33e791510a3225e11bb05998bfc51be5ea5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\ewgbuyer\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.0.1_240da24a9b40104af0fb2babf5d4878d987d6f7c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\ewgbuyer\app\libs\UPPayPluginExStd.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ced0eee3df3ef95734d12fc0db553fb87949b9fa">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\2\UPPayPluginExStd_d57dade53e969a6f8d7a2d23d043db26aaeb9f9a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\ewgbuyer\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.0.1_4521d93ff78e2cd3e0cf49186cd689aa0f9d5ca8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\ewgbuyer\app\build\intermediates\exploded-aar\com.jakewharton\butterknife\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a07818a1ecabdb149998823429cce555af4b9cba">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.jakewharton-butterknife-8.4.0_43af82d6ce8740ee389306db40b23e72c5d22974\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\ewgbuyer\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline\0.14.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8795af3e130206443f2d5ed45f1b26067aff70dc">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.facebook.fresco-imagepipeline-0.14.1_58e5c5599d94c72536cc2e7013619964381b393e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\ewgbuyer\app\libs\pushservice-5.1.0.48.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a215d0c403ce2f7e991aabe9875d5e8056db8c71">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\2\pushservice-5.1.0.48_92b2672a9d0a929ce7b94b139656ac6c09f11568\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\ewgbuyer\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="30a8aeeef975bc060baa4aaacc93b03f1b3ba780">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_e13bbd456f62114ccb81622672fb104d41383494\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\ewgbuyer\app\libs\libammsdk.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="47f4993168154fa73377d7470b9f6887d48a8023">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\2\libammsdk_d731bf10943a7b1aba84d11b8896f25a41254480\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\ewgbuyer\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_191cabf3275dd233c7fb27480728c8535e729ff0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\ewgbuyer\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-25.0.1_6e7ee12bf2c09977783410e67717e54216fe5c81\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\ewgbuyer\app\build\intermediates\exploded-aar\io.reactivex\rxandroid\1.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5a2386ad9bfff580b206a7fe305cdccd00798159">
+        <dex dex="D:\ewgbuyer\app\build\intermediates\transforms\dex\debug\folders\1000\10\io.reactivex-rxandroid-1.2.1_f38cdcfd49d8eb3b81d7f23edb174b5282a85921\classes.dex" />
+    </item>
+
+</items>

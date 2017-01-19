@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/sn_title"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:gravity="right"
+            android:text="消  费  码:"
+            android:textColor="@color/textlight_group_left" />
+
+        <TextView
+            android:id="@+id/sn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="right"
+            android:text="消  费  码:"
+            android:textColor="@color/textlight_group_right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/group_statue_title"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="4dp"
+            android:gravity="right"
+            android:text="@string/group_statue"
+            android:textColor="@color/textlight_group_left" />
+
+        <TextView
+            android:id="@+id/group_statue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:gravity="right"
+            android:text="@string/group_statue"
+            android:textColor="@color/textlight_group_right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/group_endtime_title"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="4dp"
+            android:gravity="right"
+            android:text="@string/group_endtime"
+            android:textColor="@color/textlight_group_left" />
+
+        <TextView
+            android:id="@+id/group_endtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:gravity="right"
+            android:text="@string/group_endtime"
+            android:textColor="@color/textlight_group_right" />
+    </LinearLayout>
+
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/divgray" />
+
+</LinearLayout>

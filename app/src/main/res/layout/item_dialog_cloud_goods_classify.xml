@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sv_cloud_goods_classify"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginRight="8dp"
+            android:layout_gravity="center_vertical"
+            fresco:failureImage="@mipmap/cloud_all_red"
+            fresco:failureImageScaleType="fitXY"
+            fresco:placeholderImage="@mipmap/cloud_all_red"
+            fresco:placeholderImageScaleType="fitXY"
+            fresco:retryImage="@mipmap/cloud_all_red"
+            fresco:retryImageScaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tv_cloud_goods_classify"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="1111"
+            android:textSize="@dimen/textmin"
+            android:layout_marginRight="4dp"
+            android:textColor="@color/cloud_text_g" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/cloud_line_g"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

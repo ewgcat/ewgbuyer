@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="16dp">
+
+    <RelativeLayout
+        android:id="@+id/user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!--<com.facebook.drawee.view.SimpleDraweeView-->
+        <!--android:id="@+id/iv_goods_icon"-->
+        <!--android:layout_width="56dp"-->
+        <!--android:layout_height="56dp"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginRight="8dp"-->
+        <!--android:visibility="invisible"-->
+        <!--fresco:actualImageScaleType="center"-->
+        <!--fresco:failureImage="@mipmap/ic_stub"-->
+        <!--fresco:failureImageScaleType="center"-->
+        <!--fresco:placeholderImage="@mipmap/ic_stub"-->
+        <!--fresco:placeholderImageScaleType="center"-->
+        <!--fresco:retryImage="@mipmap/ic_stub"-->
+        <!--fresco:retryImageScaleType="center"-->
+        <!--fresco:roundAsCircle="false" />-->
+        <ImageView
+            android:id="@+id/iv_goods_icon"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:id="@+id/rl_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@id/iv_goods_icon"
+            android:background="@drawable/chat_user">
+
+            <TextView
+                android:id="@+id/user_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textdark" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/store"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!--<com.facebook.drawee.view.SimpleDraweeView-->
+            <!--android:id="@+id/iv_goods"-->
+            <!--android:layout_width="56dp"-->
+            <!--android:layout_height="56dp"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_marginLeft="8dp"-->
+            <!--android:visibility="gone"-->
+            <!--fresco:actualImageScaleType="center"-->
+            <!--fresco:failureImage="@mipmap/store_image_show_picture"-->
+            <!--fresco:failureImageScaleType="center"-->
+            <!--fresco:placeholderImage="@mipmap/store_image_show_picture"-->
+            <!--fresco:placeholderImageScaleType="center"-->
+            <!--fresco:retryImage="@mipmap/store_image_show_picture"-->
+            <!--fresco:retryImageScaleType="center"-->
+            <!--fresco:roundAsCircle="true" />-->
+
+        <ImageView
+            android:id="@+id/iv_goods"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dp"
+            android:visibility="gone" />
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@id/iv_goods"
+            android:background="@drawable/chat_store">
+
+            <TextView
+                android:id="@+id/store_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textdark" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

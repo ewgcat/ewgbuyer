@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_white"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/layout_toolbar"></include>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/rl_input"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_rounded_white_frame">
+
+            <EditText
+                android:paddingLeft="5dp"
+                android:id="@+id/et_search_name"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:hint="请输入要搜索的商品"
+                android:singleLine="true"
+                android:textSize="@dimen/textsmall"
+
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/rl_input"
+            android:gravity="center"
+            android:text="搜索"
+            android:textSize="@dimen/textsmall" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divgray" />
+
+    <com.ewgvip.buyer.android.pulltorefresh.PullToRefreshListView
+        android:id="@+id/listview_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/white"
+        android:divider="@color/divgray"
+        android:dividerHeight="0.3dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:scrollbars="vertical|none"
+        android:smoothScrollbar="true"></com.ewgvip.buyer.android.pulltorefresh.PullToRefreshListView>
+
+    <include
+        android:id="@+id/nodata"
+        layout="@layout/layout_nodata"></include>
+</LinearLayout>

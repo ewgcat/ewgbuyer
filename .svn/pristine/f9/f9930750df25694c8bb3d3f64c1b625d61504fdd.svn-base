@@ -1,0 +1,143 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_mainView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <include
+        android:id="@+id/tb_headerView"
+        layout="@layout/layout_toolbar"></include>
+
+    <RelativeLayout
+        android:id="@+id/rl_mainViewList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tb_headerView">
+
+        <RelativeLayout
+            android:id="@+id/rl_headerView"
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:background="@mipmap/store_top">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentBottom="true">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/store_logo"
+                    android:layout_width="130dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/frame_grey"
+                    android:padding="0.3dp"
+                    fresco:failureImage="@mipmap/ic_stub"
+                    fresco:failureImageScaleType="center"
+                    fresco:placeholderImage="@mipmap/ic_stub"
+                    fresco:placeholderImageScaleType="center"
+                    fresco:retryImage="@mipmap/ic_stub"
+                    fresco:retryImageScaleType="center" />
+
+                <TextView
+                    android:id="@+id/tv_storename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/store_logo"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsmall" />
+
+                <TextView
+                    android:id="@+id/tv_storeinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_storename"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/store_logo"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textmin" />
+
+
+                <ImageView
+                    android:id="@+id/iv_select_store"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:src="@mipmap/sellect" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_store"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/rl_headerView"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tl_store"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                app:tabGravity="fill"
+                app:tabIndicatorColor="@color/toolbar_color"
+                app:tabMode="fixed"
+                app:tabSelectedTextColor="@color/toolbar_color"
+                app:tabTextColor="@color/textdark">
+
+            </android.support.design.widget.TabLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_go_chat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_tab"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@mipmap/contect" />
+
+                    <TextView
+                        android:id="@+id/tv_tab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="联系客服"
+                        android:textColor="@drawable/toolbar_select"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/layout_store" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+

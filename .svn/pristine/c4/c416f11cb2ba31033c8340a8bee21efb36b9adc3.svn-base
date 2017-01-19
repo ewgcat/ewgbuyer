@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_store_newgoods"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_line"
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:background="@color/gray" />
+
+        <TextView
+            android:id="@+id/tv_newtoday_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/tv_line"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:text="今日上新"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textlarge" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="230dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_white_angle">
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/sdv_newgoods_today_"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/white"
+                android:padding="1dp"
+                fresco:failureImage="@mipmap/ic_stub"
+                fresco:failureImageScaleType="center"
+                fresco:placeholderImage="@mipmap/ic_stub"
+                fresco:placeholderImageScaleType="fitCenter"
+                fresco:retryImage="@mipmap/ic_stub"
+                fresco:retryImageScaleType="center"
+                />
+
+            <TextView
+                android:id="@+id/tv_context_newtoday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tv_value_newtoday"
+                android:layout_below="@+id/sdv_newgoods_today_"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="详情"
+                android:textSize="@dimen/textmin" />
+
+            <TextView
+                android:id="@+id/tv_value_newtoday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="8dp"
+                android:text="￥49.00"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/textmin" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_firststore_goods"
+            android:layout_width="0dp"
+            android:layout_height="230dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_white_angle">
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/sdv_newgoods_today__"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/white"
+                android:padding="1dp"
+                fresco:failureImage="@mipmap/ic_stub"
+                fresco:failureImageScaleType="center"
+                fresco:placeholderImage="@mipmap/ic_stub"
+                fresco:placeholderImageScaleType="fitCenter"
+                fresco:retryImage="@mipmap/ic_stub"
+                fresco:retryImageScaleType="center"
+                />
+
+            <TextView
+                android:id="@+id/tv_context_newtoday_"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tv_value_newtoday_"
+                android:layout_below="@+id/sdv_newgoods_today__"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="详情"
+                android:textSize="@dimen/textmin" />
+
+            <TextView
+                android:id="@+id/tv_value_newtoday_"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="8dp"
+                android:text="￥49.00"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/textmin" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

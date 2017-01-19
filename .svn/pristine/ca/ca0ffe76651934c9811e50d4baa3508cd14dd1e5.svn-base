@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true">
+
+    <include
+        android:id="@+id/toolbar_layout"
+        layout="@layout/layout_toolbar"></include>
+
+    <TableLayout
+        android:id="@+id/moremenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_layout"
+        android:layout_marginTop="12dp"
+        android:shrinkColumns="0"
+        android:stretchColumns="0">
+
+
+        <TableRow
+            android:id="@+id/help"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:paddingBottom="8.0dp"
+            android:paddingTop="8.0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:drawableLeft="@mipmap/help"
+                android:drawablePadding="10.0dp"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:paddingLeft="17.0dp"
+                android:text="@string/help"
+                android:textColor="@color/textdark"
+                android:textSize="15.0sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:contentDescription="@string/help"
+                android:paddingRight="20.0dp"
+                android:src="@mipmap/arrow" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/copyright"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:paddingBottom="8.0dp"
+            android:paddingTop="8.0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:drawableLeft="@mipmap/protocol"
+                android:drawablePadding="10.0dp"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:paddingLeft="17.0dp"
+                android:text="@string/copyright"
+                android:textColor="@color/textdark"
+                android:textSize="15.0sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:contentDescription="@string/about"
+                android:paddingRight="20.0dp"
+                android:src="@mipmap/arrow" />
+        </TableRow>
+
+
+
+        <TableRow
+            android:id="@+id/cleanCache"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:paddingBottom="8.0dp"
+            android:paddingTop="8.0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:drawableLeft="@mipmap/feedback"
+                android:drawablePadding="10.0dp"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:paddingLeft="17.0dp"
+                android:text="@string/cleanCache"
+                android:textColor="@color/textdark"
+                android:textSize="15.0sp" />
+
+            <TextView
+                android:id="@+id/tv_cachesize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:text="10k"
+                android:textColor="@color/coupons_blue"
+                android:paddingRight="20.0dp"
+                 />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:paddingBottom="8.0dp"
+            android:paddingTop="8.0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:drawableLeft="@mipmap/about"
+                android:drawablePadding="10.0dp"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:paddingLeft="17.0dp"
+                android:text="@string/about"
+                android:textColor="@color/textdark"
+                android:textSize="15.0sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:contentDescription="@string/about"
+                android:paddingRight="20.0dp"
+                android:src="@mipmap/arrow" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/current_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:paddingBottom="8.0dp"
+            android:paddingTop="8.0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:drawableLeft="@mipmap/about"
+                android:drawablePadding="10.0dp"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:paddingLeft="17.0dp"
+                android:text="当前版本"
+                android:textColor="@color/textdark"
+                android:textSize="15.0sp" />
+
+            <TextView
+                android:id="@+id/tv_current_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:contentDescription="@string/about"
+                android:paddingRight="20.0dp"
+                 />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/exit"
+        style="@style/button_red"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/moremenu"
+        android:layout_margin="16dp"
+        android:maxLines="1"
+        android:text="@string/exit"
+        android:textSize="16sp" />
+
+</LinearLayout>

@@ -1,0 +1,203 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".fragment.CouponsGetIndexFragment">
+
+    <include
+        android:id="@+id/toolbar_layout"
+        layout="@layout/layout_toolbar"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_layout">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/light_gray"
+                android:orientation="vertical">
+                <!--
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#949695" />
+                -->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@mipmap/coupon_background">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/iv_coupon_pic"
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        fresco:failureImage="@mipmap/ic_stub"
+                        fresco:failureImageScaleType="center"
+                        fresco:placeholderImage="@mipmap/ic_stub"
+                        fresco:placeholderImageScaleType="center"
+                        fresco:retryImage="@mipmap/ic_stub"
+                        fresco:retryImageScaleType="center" />
+
+                    <TextView
+                        android:id="@+id/tv_coupon_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/iv_coupon_pic"
+                        android:layout_below="@id/iv_coupon_pic"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="全品类通用券"
+                        android:textColor="#686868"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_coupon_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/tv_coupon_name"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="8dp"
+                        android:text="2015.10.06--2015.10.10"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl_coupon_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="56dp"
+                        android:layout_alignTop="@id/iv_coupon_pic"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@id/iv_coupon_pic">
+
+                        <TextView
+                            android:id="@+id/tv_coupon_money_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="24dp"
+                            android:layout_alignParentBottom="true"
+                            android:text="￥"
+                            android:textColor="#5fbaf5"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tv_coupon_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="56dp"
+                            android:layout_alignBottom="@id/tv_coupon_money_type"
+                            android:layout_toRightOf="@id/tv_coupon_money_type"
+                            android:text="5"
+                            android:textColor="#5fbaf5"
+                            android:textSize="52sp" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_coupon_order_amount"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/rl_coupon_money"
+                        android:layout_below="@id/rl_coupon_money"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/rounded_coupon_bule"
+                        android:paddingBottom="1dp"
+                        android:paddingLeft="16dp"
+                        android:paddingTop="1dp"
+                        android:text="满100使用"
+                        android:textColor="#5c5a59"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+                <!--
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#949695" />
+
+                                </RelativeLayout>
+                 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="16dp">
+
+                        <com.facebook.drawee.view.SimpleDraweeView
+                            android:id="@+id/tv_commit_number"
+                            android:layout_width="96dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:background="@color/bgcolor"
+                            fresco:actualImageScaleType="fitXY"
+                            fresco:failureImage="@mipmap/ic_stub"
+                            fresco:failureImageScaleType="center"
+                            fresco:placeholderImage="@mipmap/ic_stub"
+                            fresco:placeholderImageScaleType="center"
+                            fresco:retryImage="@mipmap/ic_stub"
+                            fresco:retryImageScaleType="center" />
+
+                        <EditText
+                            android:id="@+id/et_commit_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_toLeftOf="@id/tv_commit_number"
+                            android:background="@drawable/tv_input"
+                            android:hint="请输入验证码"
+                            android:phoneNumber="true"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHint="#e0e0e0" />
+
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/b_commit_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="24dp"
+                        android:background="@drawable/rounded_red"
+                        android:text="@string/commit_coupon_now"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

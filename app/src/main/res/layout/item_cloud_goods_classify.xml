@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bgcolor">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sv_goods"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        fresco:failureImage="@mipmap/ic_stub"
+        fresco:failureImageScaleType="center"
+        fresco:placeholderImage="@mipmap/ic_stub"
+        fresco:placeholderImageScaleType="center"
+        fresco:retryImage="@mipmap/ic_stub"
+        fresco:retryImageScaleType="center" />
+
+    <ImageView
+        android:id="@+id/iv_goods"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@mipmap/cloud_purchase_coupons"/>
+
+    <TextView
+        android:id="@+id/tv_cloud_goods_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignTop="@id/sv_goods"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_toRightOf="@id/sv_goods"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="1111111111111111111111111111111111111111111111111111111111111111111111111111"
+        android:textColor="@color/user_integral_name"
+        android:textSize="@dimen/textmin" />
+
+    <ProgressBar
+        android:id="@+id/pb_cloud_goods_all_count"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="55dp"
+        android:layout_below="@+id/tv_cloud_goods_name"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/sv_goods"
+        android:max="100"
+        android:progress="50"
+        android:progressDrawable="@drawable/progress_color" />
+    <!--<TextView-->
+        <!--android:visibility="visible"-->
+        <!--android:id="@+id/tv_cloud_all_count_change_percent"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="开奖进度"-->
+        <!--android:layout_below="@+id/pb_cloud_goods_all_count"-->
+        <!--android:layout_toRightOf="@+id/sv_goods"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:layout_marginLeft="4dp"-->
+        <!--android:textSize="@dimen/textmin" />-->
+    <TextView
+        android:id="@+id/tv_cloud_all_count_change_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toRightOf="@+id/sv_goods"
+        android:textSize="@dimen/textmin"
+        android:layout_below="@+id/pb_cloud_goods_all_count"
+        android:text="总需" />
+    <TextView
+        android:id="@+id/tv_cloud_surplus_count_change_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/pb_cloud_goods_all_count"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="@dimen/textmin"
+        android:text="剩余" />
+
+
+    <TextView
+        android:id="@+id/tv_add_to_cart"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@id/sv_goods"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="16dp"
+        android:background="@mipmap/cloud_purchase_add"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:textSize="40sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/circular_form_background"
+        android:visibility="gone" />
+
+</RelativeLayout>

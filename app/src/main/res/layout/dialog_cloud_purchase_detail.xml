@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="207dp">
+
+        <LinearLayout
+            android:id="@+id/layout_dialog_cloud_detail_cart"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_dialog_cloud_detail_add_cart"
+                style="@style/button_white_redframe"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:text="加入购物车"
+                android:textColor="@color/red" />
+
+            <Button
+                android:id="@+id/tv_dialog_cloud_detail_buy"
+                style="@style/button_red"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:text="立即参与"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/layout_dialog_cloud_detail_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/layout_dialog_cloud_detail_cart"
+            android:background="@color/divider_line"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_above="@+id/layout_dialog_cloud_detail_line"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="人次期数选择" />
+
+                <TextView
+                    android:id="@+id/tv_dialog_cloud_detail_close"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16dp"
+                    android:background="@mipmap/address_delete" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:text="参与人次" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/ibtn_item_cloud_detail_minus"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/frame_grey"
+                    android:contentDescription="@string/img"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/minus" />
+
+                <EditText
+                    android:id="@+id/et_item_cloud_detail_count"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="4dp"
+                    android:background="@drawable/frame_grey"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:maxLength="5"
+                    android:minWidth="50dp"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <ImageButton
+                    android:id="@+id/ibtn_item_cloud_detail_plus"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="4dp"
+                    android:background="@drawable/frame_grey"
+                    android:contentDescription="@string/img"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/plus" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="AMap_android_API_2DMap_Lib_V2.7.0_20151124">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/AMap_android_API_2DMap_Lib_V2.7.0_20151124.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

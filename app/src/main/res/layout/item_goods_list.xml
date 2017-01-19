@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/goodslist_img"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        fresco:failureImage="@mipmap/ic_stub"
+        fresco:failureImageScaleType="center"
+        fresco:placeholderImage="@mipmap/ic_stub"
+        fresco:placeholderImageScaleType="center"
+        fresco:retryImage="@mipmap/ic_stub"
+        fresco:retryImageScaleType="center" />
+
+    <TextView
+        android:id="@+id/goodslist_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/goodslist_img"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_toRightOf="@id/goodslist_img"
+        android:ellipsize="end"
+        android:lines="2"
+        android:textColor="@color/gray_darker"
+        android:textSize="@dimen/textsmall" />
+
+    <TextView
+        android:id="@+id/goodslist_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/goodslist_title"
+        android:layout_below="@id/goodslist_title"
+        android:layout_marginTop="6dp"
+        android:singleLine="true"
+        android:textColor="@color/red_price"
+        android:textSize="@dimen/textmin"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/goodslist_evaluate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/goodslist_title"
+        android:layout_below="@id/goodslist_price"
+        android:layout_marginTop="6dp"
+        android:singleLine="true"
+        android:textColor="@color/textlight"
+        android:textSize="@dimen/textmin" />
+
+    <TextView
+        android:id="@+id/discount_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/goodslist_price"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@id/goodslist_evaluate"
+        android:background="@color/red"
+        android:paddingBottom="1dp"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:paddingTop="1dp"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+
+</RelativeLayout>

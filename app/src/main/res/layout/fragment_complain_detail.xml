@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include_title"
+        layout="@layout/layout_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/include_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@drawable/divider_vertical"
+            android:orientation="vertical"
+            android:showDividers="middle">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="128dp"
+                android:background="@color/white">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/image_goods"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    fresco:failureImage="@mipmap/ic_stub"
+                    fresco:failureImageScaleType="center"
+                    fresco:placeholderImage="@mipmap/ic_stub"
+                    fresco:placeholderImageScaleType="center"
+                    fresco:retryImage="@mipmap/ic_stub"
+                    fresco:retryImageScaleType="center" />
+
+                <TextView
+                    android:id="@+id/tv_goods_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@id/image_goods"
+                    android:maxLines="2"
+                    android:textColor="@color/plugin_camera_black"
+                    android:textSize="@dimen/text_fifteen" />
+
+                <TextView
+                    android:id="@+id/tv_goods_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/image_goods"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@id/image_goods"
+                    android:maxLines="2"
+                    android:textColor="@color/plugin_camera_black"
+                    android:textSize="@dimen/text_fifteen" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_select_theme"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tv_select_theme_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:text="@string/select_complain"
+                    android:textColor="@color/complain_detail_select_theme"
+                    android:textSize="@dimen/textmin" />
+
+                <TextView
+                    android:id="@+id/tv_select_theme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:drawablePadding="8dp"
+                    android:drawableRight="@mipmap/arrow" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/tv_texttitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:text="@string/complain_detail"
+                        android:textColor="@color/complain_detail_select_theme"
+                        android:textSize="@dimen/textmin" />
+
+                    <EditText
+                        android:id="@+id/ed_complain_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_toRightOf="@id/tv_texttitle"
+                        android:background="@drawable/edit_text_background"
+                        android:gravity="left|center_vertical"
+                        android:lines="1"
+                        android:maxLength="100"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"></EditText>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="88dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/tv_textcontent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:text="@string/complain_detail_goods_desc"
+                        android:textColor="@color/complain_detail_select_theme"
+                        android:textSize="@dimen/textmin" />
+
+                    <EditText
+                        android:id="@+id/ed_complain_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:layout_alignTop="@id/tv_textcontent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="24dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_toRightOf="@id/tv_textcontent"
+                        android:background="@drawable/edit_text_background"
+                        android:gravity="left|top"
+                        android:maxLength="1000"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="8dp"></EditText>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="投诉图片"
+                    android:textColor="@color/complain_detail_select_theme"
+                    android:textSize="@dimen/textmin" />
+
+                <LinearLayout
+                    android:id="@+id/ll_complain_picture_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="112dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_complain_picture_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/white">
+
+                        <ImageView
+                            android:id="@+id/iv_complain_picture_1_delete"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@mipmap/fail"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/iv_complain_picture_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginTop="12dp"
+                            android:src="@mipmap/upload_complain_image" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_complain_picture_2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/white">
+
+                        <ImageView
+                            android:id="@+id/iv_complain_picture_2_delete"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@mipmap/fail"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/iv_complain_picture_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginTop="12dp"
+                            android:src="@mipmap/upload_complain_image"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_complain_picture_3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/white">
+
+                        <ImageView
+                            android:id="@+id/iv_complain_picture_3_delete"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@mipmap/fail"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/iv_complain_picture_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginTop="12dp"
+                            android:src="@mipmap/upload_complain_image"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:background="@color/white"
+                    android:visibility="gone">
+
+                    <Button
+                        android:id="@+id/b_complain_picture_manager"
+                        android:layout_width="180dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/frame_red_round_white_bg"
+                        android:text="@string/complain_picture"
+                        android:textColor="@color/complain_picture_text_color" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:background="@color/white">
+
+                    <Button
+                        android:id="@+id/b_complain_commit_done"
+                        android:layout_width="180dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/frame_red_round_white_bg"
+                        android:text="@string/commit"
+                        android:textColor="@color/complain_picture_text_color" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

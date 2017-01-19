@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <include
+        android:id="@+id/toolbar_layout"
+        layout="@layout/layout_toolbar"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_layout" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/ll_pay1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                style="@style/textdark"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="订单编号："
+                android:textSize="17sp" />
+            <TextView
+                android:id="@+id/textView1"
+                style="@style/textdark"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="16dp"
+                android:text="fdf"
+                android:textSize="17sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_pay2"
+                android:layout_below="@+id/ll_pay1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+            <TextView
+                style="@style/textdark"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textView1"
+                android:layout_marginLeft="16dp"
+                android:text="付款金额："
+                android:textSize="17sp" />
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/textdark"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textView1"
+                android:textColor="@color/red"
+                android:text="fsd"
+                android:textSize="17sp" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/textdark"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/ll_pay2"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/pay_payafter_tag"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                style="@style/textdark"
+                android:layout_alignLeft="@+id/ll_pay1"
+                android:layout_below="@+id/textView3"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="16dp"
+                android:text="@string/pay_payafter_ps"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView4"
+                android:layout_below="@+id/textView4"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="15dp"
+                android:maxEms="100" >
+            </EditText>
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/editText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded_red"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

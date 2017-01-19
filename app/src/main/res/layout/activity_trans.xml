@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar"></include>
+
+    <TextView
+        android:id="@+id/nodata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top"
+        android:gravity="center"
+        android:text="@string/transbug"
+        android:textColor="@color/textdark"
+        android:textSize="17sp"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/translist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top"
+        android:divider="@color/divgray"
+        android:visibility="visible"
+        android:dividerHeight="0.5dp"></ListView>
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/light_gray"
+    android:orientation="vertical"
+    android:paddingBottom="12dp">
+
+
+        <TextView
+            android:layout_marginTop="24dp"
+            android:id="@+id/tv_my_e_gold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"
+            android:text="我的E币："
+            android:textColor="@color/textdark"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/tv_freeze_e_gold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"
+            android:text="冻结E币："
+            android:textColor="@color/textdark"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/tv_tixian_e_gold_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="24dp"
+            android:text="每月提现时间："
+            android:textColor="@color/textltip"
+            android:textSize="18sp" />
+
+
+
+</LinearLayout>

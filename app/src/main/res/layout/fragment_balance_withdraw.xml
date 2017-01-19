@@ -1,0 +1,156 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/white"
+                android:divider="@drawable/divider_vertical"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/toolbar_height"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="提现方式"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textlarge" />
+
+                    <Spinner
+                        android:id="@+id/sp_select_getway"
+                        style="@style/Animation.AppCompat.DropDownUp"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/toolbar_height"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="3"/>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/toolbar_height"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="账号"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textlarge" />
+
+                    <EditText
+                        android:id="@+id/et_please_print"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="3"
+                        android:background="@color/white"
+                        android:hint="请输入账号"
+                        android:singleLine="true"
+                        android:textColorHint="@color/dark_gray"
+                        android:textSize="@dimen/textlarge" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/toolbar_height"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="金额(元)"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textlarge" />
+
+                    <EditText
+                        android:id="@+id/et_please_money"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="3"
+                        android:background="@color/white"
+                        android:hint="请输入转出金额"
+                        android:inputType="numberDecimal"
+                        android:singleLine="true"
+                        android:textColorHint="@color/dark_gray"
+                        android:textSize="@dimen/textlarge" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:text="因转出银行不同而到账时间不同"
+                    android:textSize="@dimen/textsmall" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_confirm"
+                style="@style/button_red"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height_chang"
+                android:layout_margin="16dp"
+                android:text="确定"
+                android:textSize="@dimen/textlarge" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

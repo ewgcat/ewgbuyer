@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/layout_toolbar"></include>
+
+    <ListView
+        android:id="@+id/goods_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top"
+        android:divider="@drawable/divider_vertical_marginleft"
+        android:dividerHeight="0.3dp"
+        android:scrollbars="none"></ListView>
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_index"
+        android:orderInCategory="100"
+        android:title="@string/index"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_map"
+        android:icon="@mipmap/cart_icon"
+        android:orderInCategory="100"
+        android:title="搜索"
+        app:showAsAction="ifRoom" />
+</menu>

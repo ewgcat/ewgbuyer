@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:id="@+id/linearLayout_dialog_item"
+   >
+    <CheckBox
+        android:id="@+id/checkBox_list"
+        style="@style/RoundCheckboxTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp" />
+    <TextView
+        android:id="@+id/bt_resetguan_dialogall"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="16dp"
+        android:textColor="@color/black"
+        android:text="取消关注" />
+
+</LinearLayout>

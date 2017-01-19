@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/layout_toolbar"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:gravity="center"
+            android:text="充值卡号"
+            android:textColor="@color/textdark"
+            android:textSize="@dimen/textsmall" />
+
+        <EditText
+            android:id="@+id/et_acount_bank"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/white"
+            android:gravity="center_vertical|right"
+            android:hint="请输入充值卡号"
+            android:maxLines="1"
+            android:textColor="@color/textdark"
+            android:textSize="@dimen/textsmall" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_recharge"
+        style="@style/button_red"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height_chang"
+        android:layout_margin="16dp"
+        android:text="充值"
+        android:textSize="@dimen/textlarge" />
+
+
+</LinearLayout>

@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+
+    <include
+        android:id="@+id/Method_top"
+        layout="@layout/layout_toolbar"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/Method_top">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/method1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/white"
+                android:paddingBottom="8dp">
+
+                <TextView
+                    android:id="@+id/paymentMethods_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/paymentMethods"
+                    android:textColor="@color/textdark" />
+
+                <TextView
+                    android:id="@+id/pay_online"
+                    android:layout_width="90dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/paymentMethods_tag"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/frame_red_round_white_bg"
+                    android:gravity="center"
+                    android:text="@string/pay_online"
+                    android:textColor="@color/textdark" />
+
+                <!--<TextView-->
+                <!--android:id="@+id/pay_payafter"-->
+                <!--android:layout_width="90dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_below="@id/paymentMethods_tag"-->
+                <!--android:layout_marginLeft="8dp"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:layout_toRightOf="@id/pay_online"-->
+                <!--android:background="@drawable/frame_grey_round"-->
+                <!--android:gravity="center"-->
+                <!--android:text="@string/pay_payafter"-->
+                <!--android:textColor="@color/black" />-->
+
+                <TextView
+                    android:id="@+id/trans_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pay_online"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/textlight"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/deliveryMethods_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/deliveryMethods"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:id="@+id/translayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/deliveryMethods_tag"
+                    android:divider="@drawable/divider_vertical_marginleft"
+                    android:orientation="vertical"
+                    android:showDividers="middle"></LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_delivery_time_information"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/white"
+                android:paddingBottom="8dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/delivery_time_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/delivery_time"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/rg_time_styles"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/delivery_time_tag"
+                    android:layout_marginTop="8dp">
+
+                    <RadioButton
+                        android:id="@+id/cb_select_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="16dp"
+                        android:text="@string/delivery_select_time" />
+
+                    <RadioButton
+                        android:id="@+id/cb_anytime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_below="@id/cb_select_time"
+                        android:layout_marginLeft="16dp"
+                        android:text="@string/delivery_anytime_time" />
+
+                    <RadioButton
+                        android:id="@+id/cb_only_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_below="@id/cb_anytime"
+                        android:layout_marginLeft="16dp"
+                        android:text="@string/delivery_only_time" />
+
+                </RadioGroup>
+
+
+                <TextView
+                    android:id="@+id/tv_select_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/rg_time_styles"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center_vertical"
+                    android:hint="@string/delivery_select_time_information"
+                    android:textColor="@color/black"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_express_method"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/white"
+                android:paddingBottom="4dp">
+
+                <RadioGroup
+                    android:id="@+id/rg_express_method_tag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/tv_express_method_tag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/user_extract_address"
+                        android:textColor="@color/black" />
+
+                    <RadioButton
+                        android:id="@+id/rb_express_method"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="8dp"
+                        android:text="快递配送"
+                        android:textColor="@color/black"
+                        android:checked="false" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/tv_extract"
+                    android:layout_width="90dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/rg_express_method_tag"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/frame_grey_dark"
+                    android:gravity="center"
+                    android:text="@string/extract"
+                    android:textColor="@color/black"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_extract_information"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:layout_below="@id/rg_express_method_tag">
+
+                    <View
+                        android:id="@+id/v_bottom_line1"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/dark_gray" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_below="@id/v_bottom_line1"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/extract_address_name"
+                        android:textColor="@color/black" />
+
+
+                    <TextView
+                        android:id="@+id/tv_select_extract_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/v_bottom_line1"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="8dp"
+                        android:drawableRight="@mipmap/arrow"
+                        android:gravity="center_vertical"
+                        android:text="@string/hint_extract_address_name"
+                        android:textColor="@color/black" />
+
+
+                    <View
+                        android:id="@+id/v_bottom_line2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/dark_gray" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_delivery_self"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/white"
+                android:paddingBottom="8dp"
+                android:visibility="gone">
+
+                <CheckBox
+                    android:id="@+id/cb_user_delivery_self"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/uses_delivery_space" />
+
+                <LinearLayout
+                    android:id="@+id/ll_user_delivery_self"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cb_user_delivery_self"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_delivery_space_self"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <View
+                            android:id="@+id/v_delivery"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="16dp"
+                            android:background="@color/dark_gray" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:layout_below="@id/v_delivery"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/extract_address_name"
+                            android:textColor="@color/black" />
+
+
+                        <TextView
+                            android:id="@+id/tv_select_delivery_space"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/v_delivery"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginTop="8dp"
+                            android:drawableRight="@mipmap/arrow"
+                            android:gravity="center_vertical"
+                            android:text="点击选择自提地点"
+                            android:textColor="@color/black" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_extract_information1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rl_delivery_space_self"
+                        android:visibility="gone">
+
+                        <View
+                            android:id="@+id/v_bottom_line11"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="16dp"
+                            android:background="@color/dark_gray" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:layout_below="@id/v_bottom_line11"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/user_extract_delivery_time"
+                            android:textColor="@color/black" />
+
+
+                        <TextView
+                            android:id="@+id/tv_select_delivery_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/v_bottom_line11"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginTop="8dp"
+                            android:drawableRight="@mipmap/arrow"
+                            android:gravity="center_vertical"
+                            android:text="@string/user_delivery_time"
+                            android:textColor="@color/black" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/methodButton"
+                style="@style/button_red"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/yes" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_distance"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/tv_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:gravity="center_vertical"
+                android:text="@string/text_distance"
+                android:textColor="@color/gray_dark"
+                android:textSize="@dimen/textmin" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/backgroundgray" />
+
+        <RelativeLayout
+            android:id="@+id/rl_popular"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="1dp"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/tv_popular"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:gravity="center_vertical"
+                android:text="@string/text_popular"
+                android:textColor="@color/gray_dark"
+                android:textSize="@dimen/textmin" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/backgroundgray" />
+
+        <RelativeLayout
+            android:id="@+id/rl_sale"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="1dp"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/tv_sale"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:gravity="center_vertical"
+                android:text="@string/text_sale"
+                android:textColor="@color/gray_dark"
+                android:textSize="@dimen/textmin" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/backgroundgray" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/group_transport"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/group_life_background"></View>
+</LinearLayout>

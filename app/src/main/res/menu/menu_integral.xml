@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/action_cart"
+        android:title="@string/send_consul"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_index"
+        android:title="@string/index"
+        app:showAsAction="never" />
+
+</menu>

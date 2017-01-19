@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="定金："
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsmall" />
+
+        <TextView
+            android:id="@+id/tv_order_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20.0"
+            android:textColor="@color/button_red"
+            android:textSize="@dimen/textsmall" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="尾款："
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_marginLeft="64dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsmall" />
+        <TextView
+            android:id="@+id/tv_wei_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100.0"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/button_red"
+            android:textSize="@dimen/textsmall" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textSize="@dimen/textmin"
+            android:text="1.付定金:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:textSize="@dimen/textmin"
+            android:text="现在"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:textSize="@dimen/textmin"
+            android:text="-"/>
+        <TextView
+            android:id="@+id/tv_dingpay_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:textSize="@dimen/textmin"
+            android:text="2013.10.03"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textSize="@dimen/textmin"
+            android:text="2.付尾款:"/>
+        <TextView
+            android:id="@+id/tv_weipay_startime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="@dimen/textmin"
+            android:text="2013.01.02"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:textSize="@dimen/textmin"
+            android:text="-"/>
+        <TextView
+            android:id="@+id/tv_weipay_stoptime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="@dimen/textmin"
+            android:text="2013.10.03"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textSize="@dimen/textmin"
+            android:text="3.生    产:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:textSize="@dimen/textmin"
+            android:text="生产中，请耐心等待"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textSize="@dimen/textmin"
+            android:text="4.发    货:"/>
+        <TextView
+            android:id="@+id/tv_deliver_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:textSize="@dimen/textmin"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="2013.10.03"/>
+    </LinearLayout>
+
+</LinearLayout>

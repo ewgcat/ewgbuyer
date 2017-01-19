@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/divgray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/tv_evaluate_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/textdark" />
+
+        <TextView
+            android:id="@+id/tv_evaluate_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:textColor="@color/textdark" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/divgray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp">
+
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_evaluate_add"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            fresco:failureImage="@mipmap/ic_stub"
+            fresco:failureImageScaleType="center"
+            fresco:placeholderImage="@mipmap/ic_stub"
+            fresco:placeholderImageScaleType="center"
+            fresco:retryImage="@mipmap/ic_stub"
+            fresco:retryImageScaleType="center" />
+
+        <TextView
+            android:id="@+id/tv_evaluate_add_goods_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toLeftOf="@id/goods_price"
+            android:layout_toRightOf="@+id/iv_evaluate_add"
+            android:ellipsize="end"
+            android:lines="2"
+            android:textColor="@color/textdark" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_marginLeft="16dp"
+        android:background="@color/divgray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/layout_evaluate_add"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/btn_evaluate_edit"
+                android:layout_width="70dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/frame_red_round_white_bg"
+                android:focusable="false"
+                android:text="修改"
+                android:textColor="@color/red" />
+
+            <Button
+                android:id="@+id/btn_evaluate_delete"
+                android:layout_width="70dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/frame_red_round_white_bg"
+                android:focusable="false"
+                android:text="删除"
+                android:textColor="@color/red" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_evaluate_add"
+            android:layout_width="70dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/frame_red_round_white_bg"
+            android:focusable="false"
+            android:text="追加"
+            android:textColor="@color/red" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/divgray" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="@color/light_gray"></View>
+</LinearLayout>

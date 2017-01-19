@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/transparent" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_below="@+id/transparent"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:orientation="vertical"
+                android:paddingLeft="170dp">
+
+                <TextView
+                    android:id="@+id/tv_dialog_goods_edit_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@color/dialog_price"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_dialog_goods_edit_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="库存："
+                    android:textColor="@color/dialog_tv"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_dialog_goods_edit_select"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="已选："
+                    android:textColor="@color/dialog_tv"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/dialog_bg"
+            android:padding="2dp">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/iv_dialog_goods_edit_img"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_centerInParent="true"
+                fresco:actualImageScaleType="fitXY"
+                fresco:failureImage="@mipmap/ic_stub"
+                fresco:failureImageScaleType="center"
+                fresco:placeholderImage="@mipmap/ic_stub"
+                fresco:placeholderImageScaleType="center"
+                fresco:retryImage="@mipmap/ic_stub"
+                fresco:retryImageScaleType="center"
+                fresco:roundAsCircle="false" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+
+    <ListView
+        android:id="@+id/lview_dialog_goods_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:divider="@color/divider_line"
+        android:dividerHeight="0.5dp"></ListView>
+
+    <RelativeLayout
+        android:id="@+id/layout_dialog_goods_edit_num"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="购买数量"
+            android:textColor="@color/dialog_tv"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_dialog_goods_num"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btn_dialog_goods_edit_plus"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="数量"
+            android:inputType="numberSigned"
+            android:maxLength="8"
+            android:singleLine="true"
+            android:text="1" />
+
+        <ImageButton
+            android:id="@+id/btn_dialog_goods_edit_plus"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/frame_grey"
+            android:scaleType="centerInside"
+            android:src="@mipmap/plus" />
+
+
+        <ImageButton
+            android:id="@+id/btn_dialog_goods_edit_delease"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:layout_toLeftOf="@+id/et_dialog_goods_num"
+            android:background="@drawable/frame_grey"
+            android:scaleType="centerInside"
+            android:src="@mipmap/minus" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_goods_edit_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_dialog_goods_edit_add_car"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:text="@string/addToCar"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="0.3dp"
+            android:layout_height="match_parent"
+            android:background="@color/divgray" />
+
+        <Button
+            android:id="@+id/btn_dialog_goods_edit_buy"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/light_yellow"
+            android:gravity="center"
+            android:text="@string/buyNow"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_goods_edit_bottom"
+        style="@style/button_red"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:visibility="gone"></Button>
+</LinearLayout>

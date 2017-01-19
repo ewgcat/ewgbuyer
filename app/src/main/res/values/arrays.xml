@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="date">
+        <item>年</item>
+        <item>月</item>
+        <item>日</item>
+    </string-array>
+    <string-array name="integralGoodsArray">
+        <item>all</item>
+        <item>0-3999</item>
+        <item>4000-7999</item>
+        <item>8000-11999</item>
+        <item>12000up</item>
+    </string-array>
+    <string-array name="changeway">
+        <item>全部</item>
+        <item>转入 </item>
+        <item>转出</item>
+    </string-array>
+</resources>

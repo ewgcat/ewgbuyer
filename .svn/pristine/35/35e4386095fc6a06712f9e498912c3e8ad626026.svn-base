@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="120dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/plus"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="35dp"
+        android:src="@mipmap/plus" />
+
+    <RelativeLayout
+        android:id="@+id/goods_img"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@id/plus" >
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="84dp"
+            android:layout_height="84dp" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            style="@style/RoundCheckboxTheme"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="4dp"
+            android:clickable="false" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/goods_name"
+        android:layout_width="84dp"
+        android:layout_height="match_parent"
+        android:layout_below="@id/goods_img"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@id/plus"
+        android:ellipsize="end"
+        android:lines="2"
+        android:textColor="@color/textdark" />
+
+</RelativeLayout>
